@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Search results · Vehicle Database</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Garamond",Georgia,serif;background:linear-gradient(#fbfbfb,#f3f3f3);color:#111;-webkit-font-smoothing:antialiased}
+  .container{max-width:1200px;margin:36px auto;padding:20px;position:relative;z-index:2}
+    .back{color:#333;text-decoration:none;margin-bottom:18px;display:inline-block}
+
+  /* layout */
+  /* main layout becomes single column; the 3D model will be rendered as a full-bleed background */
+  .main-layout{display:block;min-height:calc(100vh - 120px);padding-top:40px}
+
+  /* Full-page model background */
+  .model-background{position:fixed;inset:0;z-index:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(255,255,255,0.96), rgba(250,250,250,0.98));}
+  .model-background model-viewer{width:100%;height:100%;display:block}
+
+  /* keep an empty container for spacing if needed (no images) */
+  .car-image-container{position:relative;border-radius:8px;overflow:hidden;height:120px;display:block;background:transparent}
+
+  /* top-left header for the car title */
+  .car-header{position:fixed;left:24px;top:24px;z-index:5;color:#111;pointer-events:auto}
+  .car-header .car-title{font-size:1.4rem;letter-spacing:2px;font-weight:600}
+  .car-header .car-subtitle{display:block;font-size:0.95rem;color:#444;letter-spacing:1px;margin-top:4px;font-weight:300}
+      .car-subtitle{display:block;font-size:0.95rem;color:rgba(230,230,230,0.85);letter-spacing:2px;margin-top:6px;font-weight:300}
+
+  /* Fixed right-side overlay for specs (light theme) */
+  .specs-sidebar{position:fixed;right:24px;top:50%;transform:translateY(-50%);width:360px;max-width:36vw;background:rgba(255,255,255,0.96);padding:28px;border-radius:12px;color:#111;backdrop-filter:blur(6px);box-shadow:0 12px 40px rgba(18,20,24,0.06);z-index:3;max-height:78vh;overflow:auto;border:1px solid rgba(18,20,24,0.06)}
+    .section-title{color:#444;border-bottom:1px solid rgba(18,20,24,0.06);padding-bottom:10px;margin-bottom:18px}
+    .spec-item{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(18,20,24,0.04)}
+    .spec-name{color:#666;font-size:0.85rem;text-transform:uppercase}
+    .spec-value{color:#111;font-weight:400}
+
+  /* thumbnails and inline images removed — no image UI */
+
+  .results-list{display:grid;gap:12px}
+  .result-item{padding:14px;border-radius:10px;background:rgba(18,20,24,0.04);display:flex;justify-content:space-between;align-items:center}
+      .result-item .meta{display:flex;flex-direction:column}
+
+      @media(max-width:1100px){
+        .main-layout{padding-top:20px}
+        .specs-sidebar{position:static;transform:none;width:auto;max-width:none;margin-top:18px;max-height:none}
+        .container{padding-bottom:40px}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a class="back" href="index.html">← Back to search</a>
+      <div id="results-root">Loading…</div>
+    </div>
+
+    <!-- model background container (injected once) -->
+    <div id="model-bg" class="model-background" aria-hidden="true" style="display:none">
+      <!-- model-viewer will be injected here by JS -->
+    </div>
+
+    <script>
+      // Small client-side search + renderer using backend /cars API
+      async function loadData(){
+        try{
+          const res = await fetch('/cars');
+          return res.ok ? res.json() : [];
+        }catch(e){
+          // fallback to local asset
+          const res = await fetch('assets/cars.json');
+          return res.ok ? res.json() : [];
+        }
+      }
+
+      function qs(name){
+        const params = new URLSearchParams(location.search);
+        return params.get(name) || '';
+      }
+
+      function scoreMatch(item, q){
+        q = q.toLowerCase();
+        let score = 0;
+        if(item.name.toLowerCase().includes(q)) score += 50;
+        if(item.manufacturer.toLowerCase().includes(q)) score += 30;
+        if(item.year && item.year.includes(q)) score += 20;
+        if(item.slug && item.slug.includes(q)) score += 25;
+        return score;
+      }
+
+      function renderList(matches){
+        const root = document.getElementById('results-root');
+        if(matches.length === 0){ root.innerHTML = '<div>No results found.</div>'; return; }
+
+        // If exactly one very good match, render detail
+        if(matches.length === 1 || matches[0].score > 70){ renderDetail(matches[0].item); return; }
+
+        // Otherwise show list
+        const html = [`<div class="results-list">`];
+        for(const m of matches){
+          html.push(`<div class="result-item" data-id="${m.item.id}"><div class="meta"><strong>${m.item.name}</strong><small>${m.item.manufacturer} · ${m.item.year}</small></div><div><a href="#" data-id="${m.item.id}" class="open">View</a></div></div>`);
+        }
+        html.push('</div>');
+        root.innerHTML = html.join('');
+
+        // attach view links
+        root.querySelectorAll('.open').forEach(a=>{
+          a.addEventListener('click', (e)=>{
+            e.preventDefault();
+            const id = a.getAttribute('data-id');
+            const found = matches.find(m=>m.item.id===id);
+            if(found) renderDetail(found.item);
+          });
+        });
+      }
+
+      function renderDetail(item){
+        const root = document.getElementById('results-root');
+        // ensure model background container exists and has a model-viewer
+        const modelBg = document.getElementById('model-bg');
+        if(modelBg){
+          modelBg.style.display = '';
+          // create model-viewer once if missing
+          if(!modelBg.querySelector('model-viewer')){
+            const mvEl = document.createElement('model-viewer');
+            mvEl.setAttribute('id','mv-bg');
+            mvEl.setAttribute('camera-controls','');
+            mvEl.setAttribute('auto-rotate','');
+            mvEl.setAttribute('exposure','1.0');
+            mvEl.style.width = '100%';
+            mvEl.style.height = '100%';
+            mvEl.style.display = 'block';
+            mvEl.setAttribute('environment-image','https://modelviewer.dev/shared-assets/environments/moon_1k.hdr');
+            modelBg.appendChild(mvEl);
+          }
+        }
+
+        root.innerHTML = `
+          <div class="car-header"><div class="car-title">${item.name}<span class="car-subtitle">${item.year}</span></div></div>
+          <div class="main-layout">
+            <div>
+              <div class="car-image-container"></div>
+            </div>
+            <aside class="specs-sidebar">
+              <div class="section-title">Technical Specifications</div>
+              ${Object.entries(item.specs).map(([k,v])=>`<div class="spec-item"><span class="spec-name">${k}</span><span class="spec-value">${v}</span></div>`).join('')}
+            </aside>
+          </div>
+        `;
+
+        // No thumbnails to setup — images removed per request
+
+          // Try to load a local GLB model (prefer slug, then id)
+          (async function tryLoadModel(){
+            const mv = document.getElementById('mv-bg');
+            if(!mv) return; // no model-viewer in DOM
+            const candidates = [
+              `assets/models/${item.slug}.glb`,
+              `assets/models/${item.id}.glb`,
+              `assets/models/${item.slug}.glb`.replace('.glb','-v1.glb'),
+              `assets/models/rx-7.glb`
+            ];
+
+            for(const path of candidates){
+              try{
+                const r = await fetch(path, {method:'HEAD'});
+                if(r.ok){
+                  mv.src = path;
+                  mv.style.display = '';
+                  return;
+                }
+              }catch(e){
+                // fetch HEAD can fail on file://; ignore and continue
+              }
+            }
+            // no local model found: use a safe hosted fallback and show it
+            const fallbackUrl = 'https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb';
+            if(mv){
+              mv.src = fallbackUrl;
+              mv.style.display = '';
+            }
+          })();
+      }
+
+      // bootstrap
+      (async ()=>{
+        const q = (qs('q')||'').trim();
+        if(!q){ document.getElementById('results-root').textContent = 'Please enter a search query.'; return; }
+
+        // If backend supports q, use it to fetch smaller result set
+        let data = [];
+        try{
+          const res = await fetch('/cars?q=' + encodeURIComponent(q));
+          data = res.ok ? await res.json() : [];
+        }catch(e){
+          data = await loadData();
+        }
+
+        // compute matches locally as a fallback/scoring step
+        const scoredAll = data.map(item=>({item,score:scoreMatch(item,q)})).sort((a,b)=>b.score-a.score);
+        // If backend returned exactly one item (e.g. a wiki fallback), show it even if score==0
+        if(data.length === 1){ renderDetail(data[0]); return; }
+        // Otherwise filter out zero-score items and render list
+        const scored = scoredAll.filter(s=>s.score>0);
+        renderList(scored);
+      })();
+    </script>
+  </body>
+</html>

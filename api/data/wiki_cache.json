@@ -1,0 +1,309 @@
+{
+  "lexus lc": {
+    "ts": 1760360317.0942771,
+    "item": {
+      "id": "wiki-lexus-lc",
+      "name": "Lexus LC",
+      "manufacturer": "",
+      "year": "",
+      "slug": "lexus-lc",
+      "specs": {
+        "production": "March 2017 – present [ 1 ] [ 2 ]",
+        "engine": "Petrol : 5.0 L 2UR-GSE V8 (LC 500; URZ100) Petrol hybrid : 3.5 L 8GR-FXS V6 (LC 500h; GWZ100)",
+        "power": "351 kW (471 hp; 477 PS) (LC 500) 220 kW (295 hp; 299 PS) (LC 500h; petrol engine only); 264 kW (354 hp; 359 PS) (LC 500h; combined system output)",
+        "transmission": "10-speed Direct Shift Aisin AWR10L65 automatic (LC 500) 10-speed Multi Stage Hybrid System automatic (LC 500h)",
+        "drivetrain": "Parallel hybrid (LC 500h)",
+        "weight": "1,931–2,055 kg (4,257–4,530 lb)",
+        "power_kw_min": 220.0,
+        "power_kw_max": 351.0,
+        "power_kw_avg": 278.3,
+        "power_hp_min": 295.0,
+        "power_hp_max": 477.0,
+        "power_hp_avg": 375.8,
+        "power_hp": 477.0,
+        "power_kw": 351.0,
+        "weight_kg_min": 1931.0,
+        "weight_kg_max": 2055.0,
+        "weight_kg_avg": 1993.0,
+        "weight_lb_min": 4257.1,
+        "weight_lb_max": 4530.5,
+        "weight_lb_avg": 4393.8,
+        "weight_kg": 2055.0,
+        "weight_lb": 4530.5
+      },
+      "description": "The Lexus LC  is a grand tourer manufactured by Lexus, a luxury division of Toyota. Based on the 2012 LF-LC Concept, it was revealed at the 2016 North American International Auto Show in Detroit. It replaced the SC, which was produced from 1991 to 2010. The LC is the first Lexus model to utilize the GA-L platform, which, along with other components, is shared with the full-size XF50 series LS sedan. According to Lexus, the name \"LC\" stands for \"Luxury Coupe\".",
+      "_wiki": {
+        "title": "Lexus LC",
+        "description": "Grand tourer produced by Lexus",
+        "extract": "The Lexus LC  is a grand tourer manufactured by Lexus, a luxury division of Toyota. Based on the 2012 LF-LC Concept, it was revealed at the 2016 North American International Auto Show in Detroit. It replaced the SC, which was produced from 1991 to 2010. The LC is the first Lexus model to utilize the GA-L platform, which, along with other components, is shared with the full-size XF50 series LS sedan. According to Lexus, the name \"LC\" stands for \"Luxury Coupe\".",
+        "wiki_url": "https://en.wikipedia.org/wiki/Lexus_LC",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/2023_Lexus_LC500_in_Atomic_Silver%2C_front_left.jpg/330px-2023_Lexus_LC500_in_Atomic_Silver%2C_front_left.jpg"
+      }
+    }
+  },
+  "nissan skyline": {
+    "ts": 1760518304.162853,
+    "item": {
+      "id": "wiki-nissan-skyline",
+      "name": "Nissan Skyline",
+      "manufacturer": "",
+      "year": "",
+      "slug": "nissan-skyline",
+      "specs": {
+        "production": "1957–present"
+      },
+      "description": "The Nissan Skyline  is a brand of automobile originally produced by the Prince Motor Company starting in 1957, and then by Nissan after the two companies merged in 1967. After the merger, the Skyline and its larger counterpart, the Nissan Gloria, were sold in Japan at dealership sales channels called Nissan Prince Shop.",
+      "_wiki": {
+        "title": "Nissan Skyline",
+        "description": "Series of automobiles manufactured by Nissan",
+        "extract": "The Nissan Skyline  is a brand of automobile originally produced by the Prince Motor Company starting in 1957, and then by Nissan after the two companies merged in 1967. After the merger, the Skyline and its larger counterpart, the Nissan Gloria, were sold in Japan at dealership sales channels called Nissan Prince Shop.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Nissan_Skyline",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/The_frontview_of_Nissan_DAA-HV37_SKYLINE_HYBRID_GT_Type_SP_%28cropped%29.jpg/330px-The_frontview_of_Nissan_DAA-HV37_SKYLINE_HYBRID_GT_Type_SP_%28cropped%29.jpg"
+      }
+    }
+  },
+  "audi r8 le mans concept": {
+    "ts": 1760519757.293699,
+    "item": {
+      "id": "wiki-audi-r8-le-mans-concept",
+      "name": "Audi R8 Le Mans Concept",
+      "manufacturer": "",
+      "year": "",
+      "slug": "audi-r8-le-mans-concept",
+      "specs": {
+        "production": "2008",
+        "engine": "5,984 cubic centimetres (365.2 cu in) V12 TDI",
+        "power": "493 brake horsepower (368 kW) @4,000 rpm 1,000 newton-metres (740 lbf⋅ft) @ 1750-3000 rpm",
+        "transmission": "6-speed manual",
+        "weight": "1,860 kg (4,100 lb)",
+        "power_kw_min": 368.0,
+        "power_kw_max": 368.0,
+        "power_kw_avg": 368.0,
+        "power_kw": 368.0,
+        "power_hp": 493.5,
+        "weight_kg_min": 1860.0,
+        "weight_kg_max": 1860.0,
+        "weight_kg_avg": 1860.0,
+        "weight_lb_min": 4100.6,
+        "weight_lb_max": 4100.6,
+        "weight_lb_avg": 4100.6,
+        "weight_kg": 1860.0,
+        "weight_lb": 4100.6
+      },
+      "description": "The Audi R8 V12 TDI, was a diesel-engined concept car that was first presented to the public at the 2008 North American International Auto Show on 13 January and then the Geneva Motor Show in March in the same year. The car was fitted with a 6.0-litre V12 engine, utilising Volkswagen Group's long-established Turbocharged Direct Injection (TDI) turbodiesel technology. This engine produces 368 kW at 4,000 rpm and 1,000 N⋅m (738 lbf⋅ft) of torque at 1,750-3,000 rpm. The car utilises Audi's quattro permanent four-wheel drive system and a 6-speed manual transmission. The car can accelerate from 0–100 km/h (0–62 mph) in 4.2 seconds, and can reach a top speed of over 300 km/h (186 mph).",
+      "_wiki": {
+        "title": "Audi R8 Le Mans Concept",
+        "description": "Motor vehicle",
+        "extract": "The Audi R8 V12 TDI, was a diesel-engined concept car that was first presented to the public at the 2008 North American International Auto Show on 13 January and then the Geneva Motor Show in March in the same year. The car was fitted with a 6.0-litre V12 engine, utilising Volkswagen Group's long-established Turbocharged Direct Injection (TDI) turbodiesel technology. This engine produces 368 kW at 4,000 rpm and 1,000 N⋅m (738 lbf⋅ft) of torque at 1,750-3,000 rpm. The car utilises Audi's quattro permanent four-wheel drive system and a 6-speed manual transmission. The car can accelerate from 0–100 km/h (0–62 mph) in 4.2 seconds, and can reach a top speed of over 300 km/h (186 mph).",
+        "wiki_url": "https://en.wikipedia.org/wiki/Audi_R8_Le_Mans_Concept",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Audi_R8_V12_TDI_Concept_3.jpg/330px-Audi_R8_V12_TDI_Concept_3.jpg"
+      }
+    }
+  },
+  "q:audi r8": {
+    "ts": 1760519757.29458,
+    "item": {
+      "id": "wiki-audi-r8-le-mans-concept",
+      "name": "Audi R8 Le Mans Concept",
+      "manufacturer": "",
+      "year": "",
+      "slug": "audi-r8-le-mans-concept",
+      "specs": {
+        "production": "2008",
+        "engine": "5,984 cubic centimetres (365.2 cu in) V12 TDI",
+        "power": "493 brake horsepower (368 kW) @4,000 rpm 1,000 newton-metres (740 lbf⋅ft) @ 1750-3000 rpm",
+        "transmission": "6-speed manual",
+        "weight": "1,860 kg (4,100 lb)",
+        "power_kw_min": 368.0,
+        "power_kw_max": 368.0,
+        "power_kw_avg": 368.0,
+        "power_kw": 368.0,
+        "power_hp": 493.5,
+        "weight_kg_min": 1860.0,
+        "weight_kg_max": 1860.0,
+        "weight_kg_avg": 1860.0,
+        "weight_lb_min": 4100.6,
+        "weight_lb_max": 4100.6,
+        "weight_lb_avg": 4100.6,
+        "weight_kg": 1860.0,
+        "weight_lb": 4100.6
+      },
+      "description": "The Audi R8 V12 TDI, was a diesel-engined concept car that was first presented to the public at the 2008 North American International Auto Show on 13 January and then the Geneva Motor Show in March in the same year. The car was fitted with a 6.0-litre V12 engine, utilising Volkswagen Group's long-established Turbocharged Direct Injection (TDI) turbodiesel technology. This engine produces 368 kW at 4,000 rpm and 1,000 N⋅m (738 lbf⋅ft) of torque at 1,750-3,000 rpm. The car utilises Audi's quattro permanent four-wheel drive system and a 6-speed manual transmission. The car can accelerate from 0–100 km/h (0–62 mph) in 4.2 seconds, and can reach a top speed of over 300 km/h (186 mph).",
+      "_wiki": {
+        "title": "Audi R8 Le Mans Concept",
+        "description": "Motor vehicle",
+        "extract": "The Audi R8 V12 TDI, was a diesel-engined concept car that was first presented to the public at the 2008 North American International Auto Show on 13 January and then the Geneva Motor Show in March in the same year. The car was fitted with a 6.0-litre V12 engine, utilising Volkswagen Group's long-established Turbocharged Direct Injection (TDI) turbodiesel technology. This engine produces 368 kW at 4,000 rpm and 1,000 N⋅m (738 lbf⋅ft) of torque at 1,750-3,000 rpm. The car utilises Audi's quattro permanent four-wheel drive system and a 6-speed manual transmission. The car can accelerate from 0–100 km/h (0–62 mph) in 4.2 seconds, and can reach a top speed of over 300 km/h (186 mph).",
+        "wiki_url": "https://en.wikipedia.org/wiki/Audi_R8_Le_Mans_Concept",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Audi_R8_V12_TDI_Concept_3.jpg/330px-Audi_R8_V12_TDI_Concept_3.jpg"
+      }
+    }
+  },
+  "mini": {
+    "ts": 1760519858.021043,
+    "item": {
+      "id": "wiki-mini",
+      "name": "Mini",
+      "manufacturer": "",
+      "year": "",
+      "slug": "mini",
+      "specs": {
+        "production": "1959–2000 (5.38 million)",
+        "engine": "848 cc, 970 cc, 997 cc, 998 cc, 1,071 cc, 1,098 cc, 1,275 cc A-series I4",
+        "transmission": "4-speed manual 4-speed automatic 5-speed manual (optional extra on some later models)",
+        "weight": "580–686 kg (1,279–1,512 lb)",
+        "weight_kg_min": 580.0,
+        "weight_kg_max": 686.0,
+        "weight_kg_avg": 633.0,
+        "weight_lb_min": 1278.7,
+        "weight_lb_max": 1512.4,
+        "weight_lb_avg": 1395.5,
+        "weight_kg": 686.0,
+        "weight_lb": 1512.4
+      },
+      "description": "The Mini is a very small two-door, four-seat car, produced for four decades over a single generation, with many names and variants, by the British Motor Corporation (BMC) and its successors British Leyland and the Rover Group, and finally (briefly) under BMW ownership. Minis were built as fastbacks, estates, convertibles, and various other body styles. Minus a brief 1990s hiatus, from 1959 into 2000, an estimated 5.38 million of all variations combined were built, and the Mini's engines also powered another 2 million Mini Metros, though the Mini eventually outlasted its successor.",
+      "_wiki": {
+        "title": "Mini",
+        "description": "British car model from 1959 to 2000",
+        "extract": "The Mini is a very small two-door, four-seat car, produced for four decades over a single generation, with many names and variants, by the British Motor Corporation (BMC) and its successors British Leyland and the Rover Group, and finally (briefly) under BMW ownership. Minis were built as fastbacks, estates, convertibles, and various other body styles. Minus a brief 1990s hiatus, from 1959 into 2000, an estimated 5.38 million of all variations combined were built, and the Mini's engines also powered another 2 million Mini Metros, though the Mini eventually outlasted its successor.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Mini",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Morris_Mini-Minor_1959_%28621_AOK%29.jpg/330px-Morris_Mini-Minor_1959_%28621_AOK%29.jpg"
+      }
+    }
+  },
+  "q:mini cooper s": {
+    "ts": 1760519858.021756,
+    "item": {
+      "id": "wiki-mini",
+      "name": "Mini",
+      "manufacturer": "",
+      "year": "",
+      "slug": "mini",
+      "specs": {
+        "production": "1959–2000 (5.38 million)",
+        "engine": "848 cc, 970 cc, 997 cc, 998 cc, 1,071 cc, 1,098 cc, 1,275 cc A-series I4",
+        "transmission": "4-speed manual 4-speed automatic 5-speed manual (optional extra on some later models)",
+        "weight": "580–686 kg (1,279–1,512 lb)",
+        "weight_kg_min": 580.0,
+        "weight_kg_max": 686.0,
+        "weight_kg_avg": 633.0,
+        "weight_lb_min": 1278.7,
+        "weight_lb_max": 1512.4,
+        "weight_lb_avg": 1395.5,
+        "weight_kg": 686.0,
+        "weight_lb": 1512.4
+      },
+      "description": "The Mini is a very small two-door, four-seat car, produced for four decades over a single generation, with many names and variants, by the British Motor Corporation (BMC) and its successors British Leyland and the Rover Group, and finally (briefly) under BMW ownership. Minis were built as fastbacks, estates, convertibles, and various other body styles. Minus a brief 1990s hiatus, from 1959 into 2000, an estimated 5.38 million of all variations combined were built, and the Mini's engines also powered another 2 million Mini Metros, though the Mini eventually outlasted its successor.",
+      "_wiki": {
+        "title": "Mini",
+        "description": "British car model from 1959 to 2000",
+        "extract": "The Mini is a very small two-door, four-seat car, produced for four decades over a single generation, with many names and variants, by the British Motor Corporation (BMC) and its successors British Leyland and the Rover Group, and finally (briefly) under BMW ownership. Minis were built as fastbacks, estates, convertibles, and various other body styles. Minus a brief 1990s hiatus, from 1959 into 2000, an estimated 5.38 million of all variations combined were built, and the Mini's engines also powered another 2 million Mini Metros, though the Mini eventually outlasted its successor.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Mini",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Morris_Mini-Minor_1959_%28621_AOK%29.jpg/330px-Morris_Mini-Minor_1959_%28621_AOK%29.jpg"
+      }
+    }
+  },
+  "volkswagen up": {
+    "ts": 1760519885.518539,
+    "item": {
+      "id": "wiki-volkswagen-up",
+      "name": "Volkswagen Up",
+      "manufacturer": "",
+      "year": "",
+      "slug": "volkswagen-up",
+      "specs": {
+        "production": "November-December 2011–2023 (Volkswagen up!) 2011–2020 (Škoda Citigo) [ 1 ] 2011–2021 (SEAT Mii) [ 2 ] 2014–2021 (Brazil) [ 3 ]",
+        "engine": "Petrol : 1.0 L MPI I3 1.0 L TSI I3 Petrol / CNG : 1.0 L MPI I3 [ 6 ]",
+        "transmission": "6-speed manual 5-speed manual 5-speed ASG automated manual 1-speed fixed gear ratio (electric)",
+        "weight": "929–997 kg (2,048–2,198 lb) [ 7 ]",
+        "weight_kg_min": 929.0,
+        "weight_kg_max": 997.0,
+        "weight_kg_avg": 963.0,
+        "weight_lb_min": 2048.1,
+        "weight_lb_max": 2198.0,
+        "weight_lb_avg": 2123.0,
+        "weight_kg": 997.0,
+        "weight_lb": 2198.0
+      },
+      "description": "The Volkswagen Up is a city car which was produced by the Volkswagen Group from 2011 to 2023. It is part of the New Small Family (NSF) series of models, alongside the SEAT Mii and Škoda Citigo which are rebadged versions of the Up, with slightly different front and rear fascias. Production begain in December 2011 at the Volkswagen Plant in Bratislava, Slovakia, with Volkswagen do Brasil making the model in Taubaté from February 2014 until 2021. The SEAT and Škoda versions were also manufactured in the Bratislava factory, before being withdrawn from sale in 2021 and 2020 respectively. Production of the Up ended in October 2023. A battery electric version, called E-up, was launched in autumn 2013.",
+      "_wiki": {
+        "title": "Volkswagen Up",
+        "description": "German city car",
+        "extract": "The Volkswagen Up is a city car which was produced by the Volkswagen Group from 2011 to 2023. It is part of the New Small Family (NSF) series of models, alongside the SEAT Mii and Škoda Citigo which are rebadged versions of the Up, with slightly different front and rear fascias. Production begain in December 2011 at the Volkswagen Plant in Bratislava, Slovakia, with Volkswagen do Brasil making the model in Taubaté from February 2014 until 2021. The SEAT and Škoda versions were also manufactured in the Bratislava factory, before being withdrawn from sale in 2021 and 2020 respectively. Production of the Up ended in October 2023. A battery electric version, called E-up, was launched in autumn 2013.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/2013_Volkswagen_Take_UP%21_1.0.jpg/330px-2013_Volkswagen_Take_UP%21_1.0.jpg"
+      }
+    }
+  },
+  "q:volkswagen up": {
+    "ts": 1760519885.51936,
+    "item": {
+      "id": "wiki-volkswagen-up",
+      "name": "Volkswagen Up",
+      "manufacturer": "",
+      "year": "",
+      "slug": "volkswagen-up",
+      "specs": {
+        "production": "November-December 2011–2023 (Volkswagen up!) 2011–2020 (Škoda Citigo) [ 1 ] 2011–2021 (SEAT Mii) [ 2 ] 2014–2021 (Brazil) [ 3 ]",
+        "engine": "Petrol : 1.0 L MPI I3 1.0 L TSI I3 Petrol / CNG : 1.0 L MPI I3 [ 6 ]",
+        "transmission": "6-speed manual 5-speed manual 5-speed ASG automated manual 1-speed fixed gear ratio (electric)",
+        "weight": "929–997 kg (2,048–2,198 lb) [ 7 ]",
+        "weight_kg_min": 929.0,
+        "weight_kg_max": 997.0,
+        "weight_kg_avg": 963.0,
+        "weight_lb_min": 2048.1,
+        "weight_lb_max": 2198.0,
+        "weight_lb_avg": 2123.0,
+        "weight_kg": 997.0,
+        "weight_lb": 2198.0
+      },
+      "description": "The Volkswagen Up is a city car which was produced by the Volkswagen Group from 2011 to 2023. It is part of the New Small Family (NSF) series of models, alongside the SEAT Mii and Škoda Citigo which are rebadged versions of the Up, with slightly different front and rear fascias. Production begain in December 2011 at the Volkswagen Plant in Bratislava, Slovakia, with Volkswagen do Brasil making the model in Taubaté from February 2014 until 2021. The SEAT and Škoda versions were also manufactured in the Bratislava factory, before being withdrawn from sale in 2021 and 2020 respectively. Production of the Up ended in October 2023. A battery electric version, called E-up, was launched in autumn 2013.",
+      "_wiki": {
+        "title": "Volkswagen Up",
+        "description": "German city car",
+        "extract": "The Volkswagen Up is a city car which was produced by the Volkswagen Group from 2011 to 2023. It is part of the New Small Family (NSF) series of models, alongside the SEAT Mii and Škoda Citigo which are rebadged versions of the Up, with slightly different front and rear fascias. Production begain in December 2011 at the Volkswagen Plant in Bratislava, Slovakia, with Volkswagen do Brasil making the model in Taubaté from February 2014 until 2021. The SEAT and Škoda versions were also manufactured in the Bratislava factory, before being withdrawn from sale in 2021 and 2020 respectively. Production of the Up ended in October 2023. A battery electric version, called E-up, was launched in autumn 2013.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/2013_Volkswagen_Take_UP%21_1.0.jpg/330px-2013_Volkswagen_Take_UP%21_1.0.jpg"
+      }
+    }
+  },
+  "tommykaira": {
+    "ts": 1760614920.082887,
+    "item": {
+      "id": "wiki-tommykaira",
+      "name": "Tommykaira",
+      "manufacturer": "",
+      "year": "",
+      "slug": "tommykaira",
+      "specs": {},
+      "description": "Tommykaira (トミーカイラ), originally founded as Tomita Yume Koujou (トミタ夢工場株式会社), is a Japanese car tuning and manufacturing company founded in 1986 and headquartered in Minami-ku, Kyoto, Japan. The company was named after its two founders, Yoshikazu Tomita and Kikuo Kaira. Its parent company was founded in 1968 as Tomita Auto Inc. (トミタオート株式会社). Several of Tommykaira's custom cars have appeared in the Gran Turismo and Forza Motorsport racing simulation video game series.",
+      "_wiki": {
+        "title": "Tommykaira",
+        "description": "Japanese car tuning company",
+        "extract": "Tommykaira (トミーカイラ), originally founded as Tomita Yume Koujou (トミタ夢工場株式会社), is a Japanese car tuning and manufacturing company founded in 1986 and headquartered in Minami-ku, Kyoto, Japan. The company was named after its two founders, Yoshikazu Tomita and Kikuo Kaira. Its parent company was founded in 1968 as Tomita Auto Inc. (トミタオート株式会社). Several of Tommykaira's custom cars have appeared in the Gran Turismo and Forza Motorsport racing simulation video game series.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Tommykaira",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Tommykairawiki.png"
+      }
+    }
+  },
+  "q:nissan skyline gtr r34": {
+    "ts": 1760626567.450985,
+    "item": {
+      "id": "wiki-nissan-skyline",
+      "name": "Nissan Skyline",
+      "manufacturer": "",
+      "year": "",
+      "slug": "nissan-skyline",
+      "specs": {
+        "production": "1957–present"
+      },
+      "description": "The Nissan Skyline  is a brand of automobile originally produced by the Prince Motor Company starting in 1957, and then by Nissan after the two companies merged in 1967. After the merger, the Skyline and its larger counterpart, the Nissan Gloria, were sold in Japan at dealership sales channels called Nissan Prince Shop.",
+      "_wiki": {
+        "title": "Nissan Skyline",
+        "description": "Series of automobiles manufactured by Nissan",
+        "extract": "The Nissan Skyline  is a brand of automobile originally produced by the Prince Motor Company starting in 1957, and then by Nissan after the two companies merged in 1967. After the merger, the Skyline and its larger counterpart, the Nissan Gloria, were sold in Japan at dealership sales channels called Nissan Prince Shop.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Nissan_Skyline",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/The_frontview_of_Nissan_DAA-HV37_SKYLINE_HYBRID_GT_Type_SP_%28cropped%29.jpg/330px-The_frontview_of_Nissan_DAA-HV37_SKYLINE_HYBRID_GT_Type_SP_%28cropped%29.jpg"
+      }
+    }
+  }
+}

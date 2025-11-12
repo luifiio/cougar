@@ -1,0 +1,54 @@
+[
+  {
+    "id": "ford-gt40-1966",
+    "name": "Ford GT40 Road Car",
+    "manufacturer": "Ford",
+    "year": "1966",
+    "slug": "gt40",
+    "specs": {
+      "engine": "V8",
+      "displacement": "4,940 cc",
+      "power": "335 hp @ 6,000 rpm",
+      "torque": "320 lb-ft @ 4,500 rpm",
+      "transmission": "Four-Speed Manual",
+      "drivetrain": "Mid-Engine, Rear-Wheel Drive",
+      "weight": "840 kg"
+    },
+    "description": "okkkkkkkkk.",
+    "_wiki": {
+      "title": "Ford GT40",
+      "description": "High-performance endurance racing car",
+      "extract": "The Ford GT40 is a high-performance mid-engined racing car originally designed and built for and by the Ford Motor Company to compete in 1960s European endurance racing and the World Sportscar Championship. Its specific impetus was to beat Scuderia Ferrari, which had won the prestigious 24 Hours of Le Mans race for six years running from 1960 to 1965. As rules of the time required that GT cars were built in dozens and sold, around 100 cars in total have been made, mostly as 289 cu in (4.7 L) V8-powered Mk Is, of which at least 50 were made in 1965, which allowed FIA-homologation as Group-4-Sportscar for 1966 until 1971. This gave the old MK.I car of Gulf-Wyer the chance to enter and win Le Mans in 1968 and 1969 after prototypes had been limited to 3 litre, with the performance of the Ford 7-litre-V8 in the factory 1966 Mk.II and 1967 Mk.IV prototypes causing this rule change, which also banned the 4-litre V12 Ferrari 330P4 and others after 1967. The Mk.III designation was used for some road-legal cars.",
+      "wiki_url": "https://en.wikipedia.org/wiki/Ford_GT40",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/GT40_at_Goodwood.jpg/330px-GT40_at_Goodwood.jpg"
+    },
+    "thumbnail_local": "api/media/ford-gt40-1966-thumb.webp",
+    "thumbnail_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/GT40_at_Goodwood.jpg/330px-GT40_at_Goodwood.jpg"
+  },
+  {
+    "id": "mazda-mx5-nb-1999",
+    "name": "MX-5 Miata",
+    "manufacturer": "mzazda Motor corp",
+    "year": "1999",
+    "slug": "miata-nb",
+    "specs": {
+      "engine": "Inline-Four",
+      "displacement": "1,839 cc",
+      "power": "140 hp @ 6,500 rpm",
+      "torque": "119 lb-ft @ 5,500 rpm",
+      "transmission": "Five-Speed Manual",
+      "drivetrain": "Front-Engine, Rear-Wheel Drive",
+      "weight": "1,020 kg"
+    },
+    "description": "Lightweight roadster known for its balance and driver engagement. A perfect point-and-shoot convertible with a race-bred feel.",
+    "_wiki": {
+      "title": "Mazda MX-5",
+      "description": "Lightweight two seater roadster",
+      "extract": "The Mazda MX-5 is a lightweight two-seat sports car manufactured and marketed by Mazda. In Japan, it is marketed as the Mazda Roadster or, previously, as the Eunos Roadster. In the United States it is sold as the Mazda Miata, and it was formerly marketed under the same name in Canada. The name miata derives from Old High German for \"reward\".",
+      "wiki_url": "https://en.wikipedia.org/wiki/Mazda_MX-5",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mazda_Roadster_%28MX-5%29_by_Negawa_Bridge_%28cropped%29.jpg/330px-Mazda_Roadster_%28MX-5%29_by_Negawa_Bridge_%28cropped%29.jpg"
+    },
+    "thumbnail_local": "api/media/mazda-mx5-nb-1999-thumb.webp",
+    "thumbnail_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mazda_Roadster_%28MX-5%29_by_Negawa_Bridge_%28cropped%29.jpg/330px-Mazda_Roadster_%28MX-5%29_by_Negawa_Bridge_%28cropped%29.jpg"
+  }
+]

@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vehicle Database - Refined Edition</title>
+        <style>
+            /* Reset */
+            * { box-sizing: border-box; margin: 0; padding: 0; }
+
+            /* Dark Gran Turismo inspired aesthetic */
+            body {
+                font-family: "Garamond", "Georgia", serif;
+                background: radial-gradient(circle at 50% 30%, #222428 0%, #0f1112 50%, #050506 100%);
+                color: #e6e6e6;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                overflow-x: hidden;
+            }
+
+            .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+
+            /* Header reduced and subtle */
+            .header { display:flex; justify-content:space-between; align-items:center; padding:24px 10px; }
+            .manufacturer-tag { color: #bdbdbd; letter-spacing:4px; text-transform:uppercase; font-size:0.85rem; }
+            .header h1 { font-size:1.6rem; font-weight:400; color:#fff; letter-spacing:6px; font-style:italic; }
+            .year-badge { color:#dcdcdc; border:1px solid rgba(255,255,255,0.06); padding:8px 14px; border-radius:6px; }
+
+            .main-layout { display:grid; grid-template-columns: 65% 35%; gap: 20px; min-height: calc(100vh - 90px); }
+
+            /* Showcase: spotlight and centered car */
+            .car-showcase {
+                position: relative;
+                display:flex; flex-direction:column; align-items:center; justify-content:center;
+                padding: 40px 30px 80px 30px;
+                background: transparent;
+            }
+
+            .spotlight {
+                position:absolute; inset:0; pointer-events:none; background: radial-gradient(450px 180px at 50% 35%, rgba(255,255,255,0.03), transparent 25%);
+                mix-blend-mode: overlay;
+            }
+
+            .car-image-container {
+                width:100%; max-width:1100px; height:520px; display:flex; align-items:center; justify-content:center; position:relative;
+                background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02)); border-radius:8px; overflow:hidden;
+                box-shadow: 0 20px 60px rgba(0,0,0,0.7) inset, 0 40px 80px rgba(0,0,0,0.7);
+            }
+
+            .car-image-container img#main-car { max-width:95%; max-height:100%; object-fit:contain; display:block; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.8)); }
+
+            /* Title overlay (large, translucent) */
+            .car-title {
+                position:absolute; bottom:22px; left:50%; transform:translateX(-50%);
+                color: rgba(255,255,255,0.95); font-size:1.9rem; letter-spacing:6px; text-align:center; font-weight:600; text-shadow: 0 6px 18px rgba(0,0,0,0.7);
+            }
+
+            .car-subtitle { display:block; font-size:0.95rem; color: rgba(230,230,230,0.85); letter-spacing:2px; margin-top:6px; font-weight:300; }
+
+            /* Thumbnail strip (Gran Turismo style) */
+            .thumb-strip { width:100%; max-width:1100px; margin-top:20px; display:flex; justify-content:center; align-items:center; gap:12px; padding:18px 6px; }
+
+            .thumb { width:94px; height:56px; background: rgba(255,255,255,0.03); border-radius:6px; display:flex; align-items:center; justify-content:center; cursor:pointer; position:relative; transition: transform 160ms ease, box-shadow 160ms ease; overflow:hidden; border:1px solid rgba(255,255,255,0.03); }
+            .thumb img { max-width:100%; max-height:100%; object-fit:cover; display:block; opacity:0.95; }
+
+            .thumb:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.7); }
+
+            .thumb.active { outline: 2px solid rgba(255,255,255,0.9); box-shadow: 0 18px 40px rgba(0,0,0,0.8); transform: translateY(-12px); }
+            .thumb.active::after { content: ""; position:absolute; top:-12px; left:50%; transform:translateX(-50%); border-left:10px solid transparent; border-right:10px solid transparent; border-bottom:12px solid rgba(255,255,255,0.95); }
+
+            /* Keep the specs sidebar readable on dark */
+            .specs-sidebar { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:40px; border-left:1px solid rgba(255,255,255,0.03); color:#ddd; overflow:auto; }
+            .section-title { color:#bdbdbd; border-bottom:1px solid rgba(255,255,255,0.04); padding-bottom:10px; margin-bottom:18px; }
+            .spec-item { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.02); }
+            .spec-name { color:#cfcfcf; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px; }
+            .spec-value { color:#fff; font-weight:300; }
+
+            /* Performance bars tuned for contrast */
+            .bar-track { width:100%; height:6px; background: rgba(255,255,255,0.06); border-radius:4px; overflow:hidden; }
+            .bar-progress { height:100%; width:0%; background: linear-gradient(90deg,#ffb86b,#ff6b6b); transition:width 1.2s ease; }
+
+            /* Responsive */
+            @media (max-width: 1100px) { .main-layout { grid-template-columns: 1fr; } .thumb-strip { gap:8px; } }
+            @media (max-width: 600px) { .car-image-container { height:360px; } .car-title { font-size:1.1rem; } .thumb { width:64px; height:44px; } }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div>
+                    <div class="manufacturer-tag">Mazda Motor Corporation</div>
+                    <h1>MX-5 Miata</h1>
+                </div>
+                <div class="year-badge">1999 · NB</div>
+            </div>
+
+            <div class="main-layout">
+                <div class="car-showcase">
+                        <div class="car-image-container">
+                            <img id="main-car" src="reference/GT40 Menu.png" alt="Main car" />
+                            <div class="car-title">Ford GT40 Road Car <span class="car-subtitle">'66</span></div>
+                        </div>
+
+                        <div class="thumb-strip" aria-label="car thumbnails">
+                            <div class="thumb active" data-src="reference/GT40 Menu.png"><img src="reference/GT40 Menu.png" alt="thumb 1" /></div>
+                            <div class="thumb" data-src="reference/gt7.jpg"><img src="reference/gt7.jpg" alt="thumb 2" /></div>
+                            <div class="thumb" data-src="reference/GT40 Menu.png"><img src="reference/GT40 Menu.png" alt="thumb 3" /></div>
+                            <div class="thumb" data-src="reference/gt7.jpg"><img src="reference/gt7.jpg" alt="thumb 4" /></div>
+                            <div class="thumb" data-src="reference/GT40 Menu.png"><img src="reference/GT40 Menu.png" alt="thumb 5" /></div>
+                        </div>
+                </div>
+
+                <div class="specs-sidebar">
+                    <div class="section-title">Technical Specifications</div>
+
+                    <div class="spec-group">
+                        <div class="spec-item">
+                            <span class="spec-name">Engine Configuration</span>
+                            <span class="spec-value">Inline-Four</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-name">Displacement</span>
+                            <span class="spec-value">1,839 cc</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-name">Maximum Power</span>
+                            <span class="spec-value">140 hp @ 6,500 rpm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-name">Peak Torque</span>
+                            <span class="spec-value"
+                                >119 lb-ft @ 5,500 rpm</span
+                            >
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-name">Transmission</span>
+                            <span class="spec-value">Five-Speed Manual</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-name">Drivetrain Layout</span>
+                            <span class="spec-value"
+                                >Front-Engine, Rear-Wheel Drive</span
+                            >
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-name">Weight Distribution</span>
+                            <span class="spec-value">50:50 Front/Rear</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="performance-bars">
+                        <div class="section-title">Performance Evaluation</div>
+
+                        <div class="perf-bar-item">
+                            <div class="perf-bar-header">
+                                <span class="perf-bar-label">Acceleration</span>
+                                <span class="perf-bar-value">7 of 10</span>
+                            </div>
+                            <div class="bar-track">
+                                <div
+                                    class="bar-progress"
+                                    data-width="70"
+                                    style="width: 0%"
+                                ></div>
+                            </div>
+                        </div>
+
+                        <div class="perf-bar-item">
+                            <div class="perf-bar-header">
+                                <span class="perf-bar-label"
+                                    >Maximum Velocity</span
+                                >
+                                <span class="perf-bar-value">6 of 10</span>
+                            </div>
+                            <div class="bar-track">
+                                <div
+                                    class="bar-progress"
+                                    data-width="60"
+                                    style="width: 0%"
+                                ></div>
+                            </div>
+                        </div>
+
+                        <div class="perf-bar-item">
+                            <div class="perf-bar-header">
+                                <span class="perf-bar-label"
+                                    >Road Handling</span
+                                >
+                                <span class="perf-bar-value">9 of 10</span>
+                            </div>
+                            <div class="bar-track">
+                                <div
+                                    class="bar-progress"
+                                    data-width="90"
+                                    style="width: 0%"
+                                ></div>
+                            </div>
+                        </div>
+
+                        <div class="perf-bar-item">
+                            <div class="perf-bar-header">
+                                <span class="perf-bar-label"
+                                    >Braking Performance</span
+                                >
+                                <span class="perf-bar-value">7 of 10</span>
+                            </div>
+                            <div class="bar-track">
+                                <div
+                                    class="bar-progress"
+                                    data-width="70"
+                                    style="width: 0%"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="ratings-grid">
+                        <div class="rating-item">
+                            <div class="rating-score">A</div>
+                            <div class="rating-name">Handling</div>
+                        </div>
+                        <div class="rating-item">
+                            <div class="rating-score">B</div>
+                            <div class="rating-name">Power</div>
+                        </div>
+                        <div class="rating-item">
+                            <div class="rating-score">A</div>
+                            <div class="rating-name">Balance</div>
+                        </div>
+                        <div class="rating-item">
+                            <div class="rating-score">A+</div>
+                            <div class="rating-name">Driver Engagement</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Animate bars on load with elegant timing
+            function animateBars() {
+                const bars = document.querySelectorAll('.bar-progress');
+                bars.forEach((bar, index) => {
+                    setTimeout(() => {
+                        const width = bar.getAttribute('data-width') || 60;
+                        bar.style.width = width + '%';
+                    }, index * 140 + 200);
+                });
+            }
+
+            // Thumbnail interaction: swap main image and toggle active state
+            function setupThumbnails() {
+                const thumbs = Array.from(document.querySelectorAll('.thumb'));
+                const main = document.getElementById('main-car');
+
+                if (!main || thumbs.length === 0) return;
+
+                function setActive(target) {
+                    thumbs.forEach(t => t.classList.remove('active'));
+                    target.classList.add('active');
+                    const src = target.getAttribute('data-src');
+                    if (src) {
+                        // Smooth fade swap
+                        main.style.opacity = 0;
+                        setTimeout(() => {
+                            main.src = src;
+                            main.style.opacity = 1;
+                        }, 200);
+                    }
+                }
+
+                thumbs.forEach(t => {
+                    t.addEventListener('click', () => setActive(t));
+                });
+
+                // Keyboard navigation (left/right)
+                window.addEventListener('keydown', (e) => {
+                    const activeIndex = thumbs.findIndex(t => t.classList.contains('active'));
+                    if (e.key === 'ArrowRight') {
+                        const next = thumbs[(activeIndex + 1) % thumbs.length];
+                        setActive(next);
+                    } else if (e.key === 'ArrowLeft') {
+                        const prev = thumbs[(activeIndex - 1 + thumbs.length) % thumbs.length];
+                        setActive(prev);
+                    }
+                });
+            }
+
+            window.addEventListener('load', () => {
+                animateBars();
+                setupThumbnails();
+            });
+        </script>
+    </body>
+</html>

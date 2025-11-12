@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ford-gt40-1966",
+    "name": "Ford GT40 Road Car",
+    "manufacturer": "Ford",
+    "year": "1966",
+    "slug": "gt40",
+    "images": [
+      "reference/GT40 Menu.png",
+      "reference/gt7.jpg"
+    ],
+    "specs": {
+      "engine": "V8",
+      "displacement": "4,940 cc",
+      "power": "335 hp @ 6,000 rpm",
+      "torque": "320 lb-ft @ 4,500 rpm",
+      "transmission": "Four-Speed Manual",
+      "drivetrain": "Mid-Engine, Rear-Wheel Drive",
+      "weight": "840 kg"
+    },
+    "performance": {
+      "acceleration": 85,
+      "top_speed": 92,
+      "handling": 78,
+      "braking": 80
+    },
+    "ratings": {
+      "handling": "A+",
+      "power": "A",
+      "balance": "A",
+      "engagement": "A+"
+    },
+    "description": "okkkkkkkkk."
+  },
+  {
+    "id": "mazda-mx5-nb-1999",
+    "name": "MX-5 Miata",
+    "manufacturer": "mzazda Motor corp",
+    "year": "1999",
+    "slug": "miata-nb",
+    "images": [
+      "reference/gt7.jpg"
+    ],
+    "specs": {
+      "engine": "Inline-Four",
+      "displacement": "1,839 cc",
+      "power": "140 hp @ 6,500 rpm",
+      "torque": "119 lb-ft @ 5,500 rpm",
+      "transmission": "Five-Speed Manual",
+      "drivetrain": "Front-Engine, Rear-Wheel Drive",
+      "weight": "1,020 kg"
+    },
+    "performance": {
+      "acceleration": 70,
+      "top_speed": 60,
+      "handling": 90,
+      "braking": 75
+    },
+    "ratings": {
+      "handling": "A",
+      "power": "B",
+      "balance": "A",
+      "engagement": "A+"
+    },
+    "description": "Lightweight roadster known for its balance and driver engagement. A perfect point-and-shoot convertible with a race-bred feel."
+  }
+]
