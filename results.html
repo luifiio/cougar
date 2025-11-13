@@ -3,55 +3,163 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Search results · Vehicle Database</title>
+    <title>Search Results</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
       *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:"Garamond",Georgia,serif;background:linear-gradient(#fbfbfb,#f3f3f3);color:#111;-webkit-font-smoothing:antialiased}
-  .container{max-width:1200px;margin:36px auto;padding:20px;position:relative;z-index:2}
-    .back{color:#333;text-decoration:none;margin-bottom:18px;display:inline-block}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;background:#ffffff;color:#000;-webkit-font-smoothing:antialiased}
+  .container{max-width:1600px;margin:0 auto;padding:32px 48px;position:relative;z-index:2}
+    .back{
+      color:#000;
+      text-decoration:none;
+      margin-bottom:24px;
+      display:inline-block;
+      font-size:0.85rem;
+      letter-spacing:0.5px;
+      border-bottom:1px solid transparent;
+      transition:border-color 0.2s ease;
+    }
+    .back:hover{border-bottom-color:#000;}
 
   /* layout */
-  /* main layout becomes single column; the 3D model will be rendered as a full-bleed background */
   .main-layout{display:block;min-height:calc(100vh - 120px);padding-top:40px}
 
   /* Full-page model background */
-  .model-background{position:fixed;inset:0;z-index:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(255,255,255,0.96), rgba(250,250,250,0.98));}
+  .model-background{position:fixed;inset:0;z-index:0;display:flex;align-items:center;justify-content:center;background:#fafafa;}
   .model-background model-viewer{width:100%;height:100%;display:block}
 
   /* keep an empty container for spacing if needed (no images) */
-  .car-image-container{position:relative;border-radius:8px;overflow:hidden;height:120px;display:block;background:transparent}
+  .car-image-container{position:relative;overflow:hidden;height:120px;display:block;background:transparent}
 
   /* top-left header for the car title */
-  .car-header{position:fixed;left:24px;top:24px;z-index:5;color:#111;pointer-events:auto}
-  .car-header .car-title{font-size:1.4rem;letter-spacing:2px;font-weight:600}
-  .car-header .car-subtitle{display:block;font-size:0.95rem;color:#444;letter-spacing:1px;margin-top:4px;font-weight:300}
-      .car-subtitle{display:block;font-size:0.95rem;color:rgba(230,230,230,0.85);letter-spacing:2px;margin-top:6px;font-weight:300}
+  .car-header{position:fixed;left:48px;top:48px;z-index:5;color:#000;pointer-events:auto}
+  .car-header .car-title{font-size:1.2rem;letter-spacing:1px;font-weight:300}
+  .car-header .car-subtitle{display:block;font-size:0.8rem;color:#666;letter-spacing:0.5px;margin-top:4px;font-weight:400}
 
-  /* Fixed right-side overlay for specs (light theme) */
-  .specs-sidebar{position:fixed;right:24px;top:50%;transform:translateY(-50%);width:360px;max-width:36vw;background:rgba(255,255,255,0.96);padding:28px;border-radius:12px;color:#111;backdrop-filter:blur(6px);box-shadow:0 12px 40px rgba(18,20,24,0.06);z-index:3;max-height:78vh;overflow:auto;border:1px solid rgba(18,20,24,0.06)}
-    .section-title{color:#444;border-bottom:1px solid rgba(18,20,24,0.06);padding-bottom:10px;margin-bottom:18px}
-    .spec-item{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(18,20,24,0.04)}
-    .spec-name{color:#666;font-size:0.85rem;text-transform:uppercase}
-    .spec-value{color:#111;font-weight:400}
+  /* Bottom specs bar - horizontal layout */
+  .specs-sidebar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#ffffff;
+    padding:24px 48px;
+    color:#000;
+    border-top:1px solid #e8e8e8;
+    z-index:3;
+    max-height:30vh;
+    overflow:auto;
+  }
+    .section-title{
+      color:#000;
+      border-bottom:1px solid #e8e8e8;
+      padding-bottom:10px;
+      margin-bottom:20px;
+      font-size:0.7rem;
+      font-weight:400;
+      letter-spacing:2px;
+      text-transform:uppercase;
+    }
+    .specs-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+      gap:24px 32px;
+    }
+    .spec-item{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      padding:0;
+      border-bottom:0;
+    }
+    .spec-name{color:#666;font-size:0.7rem;letter-spacing:0.5px;text-transform:uppercase}
+    .spec-value{color:#000;font-weight:400;font-size:0.9rem;letter-spacing:0.3px}
 
-  /* thumbnails and inline images removed — no image UI */
-
-  .results-list{display:grid;gap:12px}
-  .result-item{padding:14px;border-radius:10px;background:rgba(18,20,24,0.04);display:flex;justify-content:space-between;align-items:center}
-      .result-item .meta{display:flex;flex-direction:column}
+  /* Results list styling */
+  .results-list{display:grid;gap:1px;background:#e8e8e8;border:1px solid #e8e8e8}
+  .result-item{
+    padding:24px 32px;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:background 0.2s ease;
+  }
+  .result-item:hover{background:#fafafa}
+  .result-item .meta{display:flex;flex-direction:column;gap:4px}
+  .result-item .meta strong{font-weight:400;font-size:0.95rem;letter-spacing:0.3px}
+  .result-item .meta small{font-size:0.8rem;color:#666;letter-spacing:0.3px}
+  .result-item .open{
+    color:#000;
+    text-decoration:none;
+    font-size:0.75rem;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    border-bottom:1px solid #000;
+    padding-bottom:2px;
+  }
 
       @media(max-width:1100px){
         .main-layout{padding-top:20px}
-        .specs-sidebar{position:static;transform:none;width:auto;max-width:none;margin-top:18px;max-height:none}
-        .container{padding-bottom:40px}
+        .specs-sidebar{padding:24px 20px;max-height:50vh}
+        .specs-grid{grid-template-columns:repeat(auto-fit, minmax(160px, 1fr));gap:20px 24px}
+        .container{padding:24px 20px;padding-bottom:40px}
+        .car-header{left:20px;top:24px}
+      }
+      @media(max-width:600px){
+        .specs-grid{grid-template-columns:1fr 1fr;gap:16px 20px}
+        .spec-name{font-size:0.65rem}
+        .spec-value{font-size:0.85rem}
+      }
+
+      /* Minimal loading animation */
+      .loading{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        min-height:60vh;
+        gap:16px;
+      }
+      .loading-dots{
+        display:flex;
+        gap:12px;
+      }
+      .loading-dot{
+        width:12px;
+        height:12px;
+        background:#000;
+        border-radius:50%;
+        animation:loading-pulse 1.4s ease-in-out infinite;
+      }
+      .loading-dot:nth-child(1){animation-delay:0s}
+      .loading-dot:nth-child(2){animation-delay:0.2s}
+      .loading-dot:nth-child(3){animation-delay:0.4s}
+      @keyframes loading-pulse{
+        0%,80%,100%{opacity:0.3;transform:scale(0.8)}
+        40%{opacity:1;transform:scale(1)}
+      }
+      .loading-text{
+        font-size:0.85rem;
+        letter-spacing:2.5px;
+        text-transform:uppercase;
+        color:#666;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <a class="back" href="index.html">← Back to search</a>
-      <div id="results-root">Loading…</div>
+      <div id="results-root">
+        <div class="loading">
+          <div class="loading-dots">
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+          </div>
+          <div class="loading-text">Loading</div>
+        </div>
+      </div>
     </div>
 
     <!-- model background container (injected once) -->
@@ -60,15 +168,21 @@
     </div>
 
     <script>
-      // Small client-side search + renderer using backend /cars API
+      // Small client-side search + renderer using backend /cars API v3
       async function loadData(){
         try{
-          const res = await fetch('/cars');
+          // Try API server first
+          const res = await fetch('http://localhost:8000/cars');
           return res.ok ? res.json() : [];
         }catch(e){
           // fallback to local asset
-          const res = await fetch('assets/cars.json');
-          return res.ok ? res.json() : [];
+          try{
+            const res = await fetch('assets/cars.json');
+            return res.ok ? res.json() : [];
+          }catch(e2){
+            console.error('Failed to load data:', e2);
+            return [];
+          }
         }
       }
 
@@ -134,17 +248,31 @@
           }
         }
 
+        // Filter specs to only show key information (exact matches only)
+        const keySpecs = ['production', 'engine', 'power', 'transmission', 'weight'];
+        const filteredSpecs = Object.entries(item.specs || {}).filter(([k,v]) => {
+          const kLower = k.toLowerCase();
+          return keySpecs.includes(kLower);
+        });
+
+        // Show specs section even if we only have some of the key specs
+        const specsHTML = filteredSpecs.length > 0 ? `
+          <aside class="specs-sidebar">
+            <div class="section-title">Technical Specifications</div>
+            <div class="specs-grid">
+              ${filteredSpecs.map(([k,v])=>`<div class="spec-item"><span class="spec-name">${k}</span><span class="spec-value">${v}</span></div>`).join('')}
+            </div>
+          </aside>
+        ` : '';
+
         root.innerHTML = `
-          <div class="car-header"><div class="car-title">${item.name}<span class="car-subtitle">${item.year}</span></div></div>
+          <div class="car-header"><div class="car-title">${item.name}<span class="car-subtitle">${item.year || ''}</span></div></div>
           <div class="main-layout">
             <div>
               <div class="car-image-container"></div>
             </div>
-            <aside class="specs-sidebar">
-              <div class="section-title">Technical Specifications</div>
-              ${Object.entries(item.specs).map(([k,v])=>`<div class="spec-item"><span class="spec-name">${k}</span><span class="spec-value">${v}</span></div>`).join('')}
-            </aside>
           </div>
+          ${specsHTML}
         `;
 
         // No thumbnails to setup — images removed per request
@@ -189,9 +317,21 @@
         // If backend supports q, use it to fetch smaller result set
         let data = [];
         try{
-          const res = await fetch('/cars?q=' + encodeURIComponent(q));
+          // Add timeout to prevent hanging forever
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 20000); // 20 second timeout
+          
+          const res = await fetch('http://localhost:8000/cars?q=' + encodeURIComponent(q), {
+            signal: controller.signal
+          });
+          clearTimeout(timeoutId);
           data = res.ok ? await res.json() : [];
         }catch(e){
+          console.log('API fetch failed, loading local data:', e);
+          if(e.name === 'AbortError'){
+            document.getElementById('results-root').innerHTML = '<div style="text-align:center;padding:40px;color:#666;font-size:0.9rem;letter-spacing:0.5px;">Search is taking too long. Wikipedia may be slow or unavailable.<br><br><a href="index.html" style="color:#000;text-decoration:underline;">Try another search</a></div>';
+            return;
+          }
           data = await loadData();
         }
 

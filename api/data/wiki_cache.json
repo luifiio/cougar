@@ -101,40 +101,25 @@
     }
   },
   "q:audi r8": {
-    "ts": 1760519757.29458,
+    "ts": 1763050580.979549,
     "item": {
-      "id": "wiki-audi-r8-le-mans-concept",
-      "name": "Audi R8 Le Mans Concept",
+      "id": "wiki-audi-r8-(lmp)",
+      "name": "Audi R8 (LMP)",
       "manufacturer": "",
       "year": "",
-      "slug": "audi-r8-le-mans-concept",
+      "slug": "audi-r8-(lmp)",
       "specs": {
-        "production": "2008",
-        "engine": "5,984 cubic centimetres (365.2 cu in) V12 TDI",
-        "power": "493 brake horsepower (368 kW) @4,000 rpm 1,000 newton-metres (740 lbf⋅ft) @ 1750-3000 rpm",
-        "transmission": "6-speed manual",
-        "weight": "1,860 kg (4,100 lb)",
-        "power_kw_min": 368.0,
-        "power_kw_max": 368.0,
-        "power_kw_avg": 368.0,
-        "power_kw": 368.0,
-        "power_hp": 493.5,
-        "weight_kg_min": 1860.0,
-        "weight_kg_max": 1860.0,
-        "weight_kg_avg": 1860.0,
-        "weight_lb_min": 4100.6,
-        "weight_lb_max": 4100.6,
-        "weight_lb_avg": 4100.6,
-        "weight_kg": 1860.0,
-        "weight_lb": 4100.6
+        "engine": "Audi 3.6 liter 90-degree V8 twin-turbo , mid-engine , longitudinally mounted",
+        "transmission": "Ricardo 6-speed electro-pneumatic actuated sequential manual Multiple-disc limited-slip differential",
+        "drivetrain": "Tom Kristensen Marco Werner Rinaldo Capello Michele Alboreto Allan McNish Emanuele Pirro Frank Biela Laurent Aïello Stéphane Ortelli Stefan Johansson JJ Lehto Johnny Herbert"
       },
-      "description": "The Audi R8 V12 TDI, was a diesel-engined concept car that was first presented to the public at the 2008 North American International Auto Show on 13 January and then the Geneva Motor Show in March in the same year. The car was fitted with a 6.0-litre V12 engine, utilising Volkswagen Group's long-established Turbocharged Direct Injection (TDI) turbodiesel technology. This engine produces 368 kW at 4,000 rpm and 1,000 N⋅m (738 lbf⋅ft) of torque at 1,750-3,000 rpm. The car utilises Audi's quattro permanent four-wheel drive system and a 6-speed manual transmission. The car can accelerate from 0–100 km/h (0–62 mph) in 4.2 seconds, and can reach a top speed of over 300 km/h (186 mph).",
+      "description": "The Audi R8 is a Le Mans Prototype sports-prototype race car introduced in 2000 for sports car racing as a redevelopment of their Audi R8R and Audi R8C used in 1999. In its class, it is one of the most successful racing sports cars having won the 24 Hours of Le Mans race in 2000, 2001, 2002, 2004, and 2005, five of the six years it competed in total. Its streak of Le Mans victories between 2000 and 2005 was broken only in 2003 by the Bentley Speed 8, another race car fielded that year by Volkswagen Group.",
       "_wiki": {
-        "title": "Audi R8 Le Mans Concept",
-        "description": "Motor vehicle",
-        "extract": "The Audi R8 V12 TDI, was a diesel-engined concept car that was first presented to the public at the 2008 North American International Auto Show on 13 January and then the Geneva Motor Show in March in the same year. The car was fitted with a 6.0-litre V12 engine, utilising Volkswagen Group's long-established Turbocharged Direct Injection (TDI) turbodiesel technology. This engine produces 368 kW at 4,000 rpm and 1,000 N⋅m (738 lbf⋅ft) of torque at 1,750-3,000 rpm. The car utilises Audi's quattro permanent four-wheel drive system and a 6-speed manual transmission. The car can accelerate from 0–100 km/h (0–62 mph) in 4.2 seconds, and can reach a top speed of over 300 km/h (186 mph).",
-        "wiki_url": "https://en.wikipedia.org/wiki/Audi_R8_Le_Mans_Concept",
-        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Audi_R8_V12_TDI_Concept_3.jpg/330px-Audi_R8_V12_TDI_Concept_3.jpg"
+        "title": "Audi R8 (LMP)",
+        "description": "Le Mans Prototype race car",
+        "extract": "The Audi R8 is a Le Mans Prototype sports-prototype race car introduced in 2000 for sports car racing as a redevelopment of their Audi R8R and Audi R8C used in 1999. In its class, it is one of the most successful racing sports cars having won the 24 Hours of Le Mans race in 2000, 2001, 2002, 2004, and 2005, five of the six years it competed in total. Its streak of Le Mans victories between 2000 and 2005 was broken only in 2003 by the Bentley Speed 8, another race car fielded that year by Volkswagen Group.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Audi_R8_(LMP)",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/2000_Audi_R8_LMP1_Front.jpg/330px-2000_Audi_R8_LMP1_Front.jpg"
       }
     }
   },
@@ -286,23 +271,936 @@
     }
   },
   "q:nissan skyline gtr r34": {
-    "ts": 1760626567.450985,
+    "ts": 1763052016.587883,
     "item": {
-      "id": "wiki-nissan-skyline",
-      "name": "Nissan Skyline",
+      "id": "wiki-nissan-rb-engine",
+      "name": "Nissan RB engine",
       "manufacturer": "",
       "year": "",
-      "slug": "nissan-skyline",
+      "slug": "nissan-rb-engine",
       "specs": {
-        "production": "1957–present"
+        "production": "1985–2004 2019–present (new production; RB26) [ 1 ] [ 2 ]",
+        "displacement": "2.0 L; 121.9 cu in (1,998 cc) 2.4 L; 148.2 cu in (2,428 cc) 2.5 L; 152.4 cu in (2,498 cc) 2.6 L; 156.7 cu in (2,568 cc) 2.8 L; 169.0 cu in (2,770 cc) 3.0 L; 180.8 cu in (2,962 cc)",
+        "power": "94–280 PS (93–276 hp ; 69–206 kW )",
+        "torque": "142–392 N⋅m (14–40 kg⋅m ; 105–289 lb⋅ft )",
+        "power_kw_min": 206.0,
+        "power_kw_max": 206.0,
+        "power_kw_avg": 206.0,
+        "power_hp_min": 276.0,
+        "power_hp_max": 280.0,
+        "power_hp_avg": 278.0,
+        "power_hp": 280.0,
+        "power_kw": 206.0,
+        "displacement_l_min": 2.0,
+        "displacement_l_max": 3.0,
+        "displacement_l": 3.0,
+        "displacement_cc": 3000
       },
-      "description": "The Nissan Skyline  is a brand of automobile originally produced by the Prince Motor Company starting in 1957, and then by Nissan after the two companies merged in 1967. After the merger, the Skyline and its larger counterpart, the Nissan Gloria, were sold in Japan at dealership sales channels called Nissan Prince Shop.",
+      "description": "The RB engine is an oversquare 2.0–3.0 L straight-6 four-stroke gasoline engine from Nissan produced from 1985 to 2004. The RB followed the 1983 VG-series V6 engines to offer a full, modern range in both straight or V layouts. It was part of a new engine family name PLASMA.",
       "_wiki": {
-        "title": "Nissan Skyline",
-        "description": "Series of automobiles manufactured by Nissan",
-        "extract": "The Nissan Skyline  is a brand of automobile originally produced by the Prince Motor Company starting in 1957, and then by Nissan after the two companies merged in 1967. After the merger, the Skyline and its larger counterpart, the Nissan Gloria, were sold in Japan at dealership sales channels called Nissan Prince Shop.",
-        "wiki_url": "https://en.wikipedia.org/wiki/Nissan_Skyline",
-        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/The_frontview_of_Nissan_DAA-HV37_SKYLINE_HYBRID_GT_Type_SP_%28cropped%29.jpg/330px-The_frontview_of_Nissan_DAA-HV37_SKYLINE_HYBRID_GT_Type_SP_%28cropped%29.jpg"
+        "title": "Nissan RB engine",
+        "description": "Reciprocating internal combustion engine",
+        "extract": "The RB engine is an oversquare 2.0–3.0 L straight-6 four-stroke gasoline engine from Nissan produced from 1985 to 2004. The RB followed the 1983 VG-series V6 engines to offer a full, modern range in both straight or V layouts. It was part of a new engine family name PLASMA.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Nissan_RB_engine",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/RB26DETT_R34.jpg/330px-RB26DETT_R34.jpg"
+      }
+    }
+  },
+  "mazda mx-5 (nc)": {
+    "ts": 1763047648.8115861,
+    "item": {
+      "id": "wiki-mazda-mx-5-(nc)",
+      "name": "Mazda MX-5 (NC)",
+      "manufacturer": "",
+      "year": "",
+      "slug": "mazda-mx-5-(nc)",
+      "specs": {
+        "production": "2005–2015",
+        "engine": "1.8 L (110 cu in) MZR L8-DE DOHC I4 (Europe) 2.0 L (120 cu in) MZR LF-VE DOHC I4",
+        "power": "126 hp (94 kW) (1.8 L) 170 hp (127 kW) (2.0 L)",
+        "transmission": "5-speed manual 6-speed Aisin AZ6 manual 6-speed SJ6A-EL Activematic automatic",
+        "weight": "1,110 kg (2,450 lb) (soft-top) 1,153 kg (2,542 lb) (PRHT)",
+        "power_kw_min": 94.0,
+        "power_kw_max": 127.0,
+        "power_kw_avg": 110.5,
+        "power_hp_min": 126.0,
+        "power_hp_max": 170.0,
+        "power_hp_avg": 148.0,
+        "power_hp": 170.0,
+        "power_kw": 127.0,
+        "weight_kg_min": 1110.0,
+        "weight_kg_max": 1153.0,
+        "weight_kg_avg": 1131.5,
+        "weight_lb_min": 2447.1,
+        "weight_lb_max": 2541.9,
+        "weight_lb_avg": 2494.5,
+        "weight_kg": 1153.0,
+        "weight_lb": 2541.9
+      },
+      "description": "The Mazda MX-5 (NC) is the third generation of the Mazda MX-5 manufactured from 2005 to 2015. At its introduction in 2005, it won the Car of the Year Japan Award and made Car and Driver's 10Best list from 2006 to 2013.",
+      "_wiki": {
+        "title": "Mazda MX-5 (NC)",
+        "description": "Motor vehicle",
+        "extract": "The Mazda MX-5 (NC) is the third generation of the Mazda MX-5 manufactured from 2005 to 2015. At its introduction in 2005, it won the Car of the Year Japan Award and made Car and Driver's 10Best list from 2006 to 2013.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Mazda_MX-5_(NC)",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/3rd_Mazda_MX-5_--_06-14-2010.jpg/330px-3rd_Mazda_MX-5_--_06-14-2010.jpg"
+      }
+    }
+  },
+  "q:mx5 mazda": {
+    "ts": 1763047648.814744,
+    "item": {
+      "id": "wiki-mazda-mx-5-(nc)",
+      "name": "Mazda MX-5 (NC)",
+      "manufacturer": "",
+      "year": "",
+      "slug": "mazda-mx-5-(nc)",
+      "specs": {
+        "production": "2005–2015",
+        "engine": "1.8 L (110 cu in) MZR L8-DE DOHC I4 (Europe) 2.0 L (120 cu in) MZR LF-VE DOHC I4",
+        "power": "126 hp (94 kW) (1.8 L) 170 hp (127 kW) (2.0 L)",
+        "transmission": "5-speed manual 6-speed Aisin AZ6 manual 6-speed SJ6A-EL Activematic automatic",
+        "weight": "1,110 kg (2,450 lb) (soft-top) 1,153 kg (2,542 lb) (PRHT)",
+        "power_kw_min": 94.0,
+        "power_kw_max": 127.0,
+        "power_kw_avg": 110.5,
+        "power_hp_min": 126.0,
+        "power_hp_max": 170.0,
+        "power_hp_avg": 148.0,
+        "power_hp": 170.0,
+        "power_kw": 127.0,
+        "weight_kg_min": 1110.0,
+        "weight_kg_max": 1153.0,
+        "weight_kg_avg": 1131.5,
+        "weight_lb_min": 2447.1,
+        "weight_lb_max": 2541.9,
+        "weight_lb_avg": 2494.5,
+        "weight_kg": 1153.0,
+        "weight_lb": 2541.9
+      },
+      "description": "The Mazda MX-5 (NC) is the third generation of the Mazda MX-5 manufactured from 2005 to 2015. At its introduction in 2005, it won the Car of the Year Japan Award and made Car and Driver's 10Best list from 2006 to 2013.",
+      "_wiki": {
+        "title": "Mazda MX-5 (NC)",
+        "description": "Motor vehicle",
+        "extract": "The Mazda MX-5 (NC) is the third generation of the Mazda MX-5 manufactured from 2005 to 2015. At its introduction in 2005, it won the Car of the Year Japan Award and made Car and Driver's 10Best list from 2006 to 2013.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Mazda_MX-5_(NC)",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/3rd_Mazda_MX-5_--_06-14-2010.jpg/330px-3rd_Mazda_MX-5_--_06-14-2010.jpg"
+      }
+    }
+  },
+  "q:mazda mx5 nd": {
+    "ts": 1763047680.408531,
+    "item": {
+      "id": "wiki-mazda-mx-5-(nc)",
+      "name": "Mazda MX-5 (NC)",
+      "manufacturer": "",
+      "year": "",
+      "slug": "mazda-mx-5-(nc)",
+      "specs": {
+        "production": "2005–2015",
+        "engine": "1.8 L (110 cu in) MZR L8-DE DOHC I4 (Europe) 2.0 L (120 cu in) MZR LF-VE DOHC I4",
+        "power": "126 hp (94 kW) (1.8 L) 170 hp (127 kW) (2.0 L)",
+        "transmission": "5-speed manual 6-speed Aisin AZ6 manual 6-speed SJ6A-EL Activematic automatic",
+        "weight": "1,110 kg (2,450 lb) (soft-top) 1,153 kg (2,542 lb) (PRHT)",
+        "power_kw_min": 94.0,
+        "power_kw_max": 127.0,
+        "power_kw_avg": 110.5,
+        "power_hp_min": 126.0,
+        "power_hp_max": 170.0,
+        "power_hp_avg": 148.0,
+        "power_hp": 170.0,
+        "power_kw": 127.0,
+        "weight_kg_min": 1110.0,
+        "weight_kg_max": 1153.0,
+        "weight_kg_avg": 1131.5,
+        "weight_lb_min": 2447.1,
+        "weight_lb_max": 2541.9,
+        "weight_lb_avg": 2494.5,
+        "weight_kg": 1153.0,
+        "weight_lb": 2541.9
+      },
+      "description": "The Mazda MX-5 (NC) is the third generation of the Mazda MX-5 manufactured from 2005 to 2015. At its introduction in 2005, it won the Car of the Year Japan Award and made Car and Driver's 10Best list from 2006 to 2013.",
+      "_wiki": {
+        "title": "Mazda MX-5 (NC)",
+        "description": "Motor vehicle",
+        "extract": "The Mazda MX-5 (NC) is the third generation of the Mazda MX-5 manufactured from 2005 to 2015. At its introduction in 2005, it won the Car of the Year Japan Award and made Car and Driver's 10Best list from 2006 to 2013.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Mazda_MX-5_(NC)",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/3rd_Mazda_MX-5_--_06-14-2010.jpg/330px-3rd_Mazda_MX-5_--_06-14-2010.jpg"
+      }
+    }
+  },
+  "meizu mx5": {
+    "ts": 1763048146.856006,
+    "item": {
+      "id": "wiki-meizu-mx5",
+      "name": "Meizu MX5",
+      "manufacturer": "",
+      "year": "",
+      "slug": "meizu-mx5",
+      "specs": {
+        "weight": "149 g (5.3 oz)"
+      },
+      "description": "The Meizu MX5 is a smartphone designed and produced by the Chinese manufacturer Meizu, which runs on Flyme OS, Meizu's modified Android operating system. It is a previous phablet model of the MX series, succeeding the Meizu MX4 and preceding the Meizu MX6. It was unveiled on June 30, 2015 in Beijing.",
+      "_wiki": {
+        "title": "Meizu MX5",
+        "description": "Android smartphone",
+        "extract": "The Meizu MX5 is a smartphone designed and produced by the Chinese manufacturer Meizu, which runs on Flyme OS, Meizu's modified Android operating system. It is a previous phablet model of the MX series, succeeding the Meizu MX4 and preceding the Meizu MX6. It was unveiled on June 30, 2015 in Beijing.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Meizu_MX5",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Illustration_-_Meizu_MX5.png/330px-Illustration_-_Meizu_MX5.png"
+      }
+    }
+  },
+  "q:mx5": {
+    "ts": 1763048146.858407,
+    "item": {
+      "id": "wiki-meizu-mx5",
+      "name": "Meizu MX5",
+      "manufacturer": "",
+      "year": "",
+      "slug": "meizu-mx5",
+      "specs": {
+        "weight": "149 g (5.3 oz)"
+      },
+      "description": "The Meizu MX5 is a smartphone designed and produced by the Chinese manufacturer Meizu, which runs on Flyme OS, Meizu's modified Android operating system. It is a previous phablet model of the MX series, succeeding the Meizu MX4 and preceding the Meizu MX6. It was unveiled on June 30, 2015 in Beijing.",
+      "_wiki": {
+        "title": "Meizu MX5",
+        "description": "Android smartphone",
+        "extract": "The Meizu MX5 is a smartphone designed and produced by the Chinese manufacturer Meizu, which runs on Flyme OS, Meizu's modified Android operating system. It is a previous phablet model of the MX series, succeeding the Meizu MX4 and preceding the Meizu MX6. It was unveiled on June 30, 2015 in Beijing.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Meizu_MX5",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Illustration_-_Meizu_MX5.png/330px-Illustration_-_Meizu_MX5.png"
+      }
+    }
+  },
+  "q:mazda mx5": {
+    "ts": 1763048292.4036522,
+    "item": {
+      "id": "wiki-mazda-mx-5-(nc)",
+      "name": "Mazda MX-5 (NC)",
+      "manufacturer": "",
+      "year": "",
+      "slug": "mazda-mx-5-(nc)",
+      "specs": {
+        "production": "2005–2015",
+        "engine": "1.8 L (110 cu in) MZR L8-DE DOHC I4 (Europe) 2.0 L (120 cu in) MZR LF-VE DOHC I4",
+        "power": "126 hp (94 kW) (1.8 L) 170 hp (127 kW) (2.0 L)",
+        "transmission": "5-speed manual 6-speed Aisin AZ6 manual 6-speed SJ6A-EL Activematic automatic",
+        "weight": "1,110 kg (2,450 lb) (soft-top) 1,153 kg (2,542 lb) (PRHT)",
+        "power_kw_min": 94.0,
+        "power_kw_max": 127.0,
+        "power_kw_avg": 110.5,
+        "power_hp_min": 126.0,
+        "power_hp_max": 170.0,
+        "power_hp_avg": 148.0,
+        "power_hp": 170.0,
+        "power_kw": 127.0,
+        "weight_kg_min": 1110.0,
+        "weight_kg_max": 1153.0,
+        "weight_kg_avg": 1131.5,
+        "weight_lb_min": 2447.1,
+        "weight_lb_max": 2541.9,
+        "weight_lb_avg": 2494.5,
+        "weight_kg": 1153.0,
+        "weight_lb": 2541.9
+      },
+      "description": "The Mazda MX-5 (NC) is the third generation of the Mazda MX-5 manufactured from 2005 to 2015. At its introduction in 2005, it won the Car of the Year Japan Award and made Car and Driver's 10Best list from 2006 to 2013.",
+      "_wiki": {
+        "title": "Mazda MX-5 (NC)",
+        "description": "Motor vehicle",
+        "extract": "The Mazda MX-5 (NC) is the third generation of the Mazda MX-5 manufactured from 2005 to 2015. At its introduction in 2005, it won the Car of the Year Japan Award and made Car and Driver's 10Best list from 2006 to 2013.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Mazda_MX-5_(NC)",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/3rd_Mazda_MX-5_--_06-14-2010.jpg/330px-3rd_Mazda_MX-5_--_06-14-2010.jpg"
+      }
+    }
+  },
+  "q:mazda mx5 nc": {
+    "ts": 1763048518.480165,
+    "item": {
+      "id": "wiki-mazda-mx-5-(nc)",
+      "name": "Mazda MX-5 (NC)",
+      "manufacturer": "",
+      "year": "",
+      "slug": "mazda-mx-5-(nc)",
+      "specs": {
+        "production": "2005–2015",
+        "engine": "1.8 L (110 cu in) MZR L8-DE DOHC I4 (Europe) 2.0 L (120 cu in) MZR LF-VE DOHC I4",
+        "power": "126 hp (94 kW) (1.8 L) 170 hp (127 kW) (2.0 L)",
+        "transmission": "5-speed manual 6-speed Aisin AZ6 manual 6-speed SJ6A-EL Activematic automatic",
+        "weight": "1,110 kg (2,450 lb) (soft-top) 1,153 kg (2,542 lb) (PRHT)",
+        "power_kw_min": 94.0,
+        "power_kw_max": 127.0,
+        "power_kw_avg": 110.5,
+        "power_hp_min": 126.0,
+        "power_hp_max": 170.0,
+        "power_hp_avg": 148.0,
+        "power_hp": 170.0,
+        "power_kw": 127.0,
+        "weight_kg_min": 1110.0,
+        "weight_kg_max": 1153.0,
+        "weight_kg_avg": 1131.5,
+        "weight_lb_min": 2447.1,
+        "weight_lb_max": 2541.9,
+        "weight_lb_avg": 2494.5,
+        "weight_kg": 1153.0,
+        "weight_lb": 2541.9
+      },
+      "description": "The Mazda MX-5 (NC) is the third generation of the Mazda MX-5 manufactured from 2005 to 2015. At its introduction in 2005, it won the Car of the Year Japan Award and made Car and Driver's 10Best list from 2006 to 2013.",
+      "_wiki": {
+        "title": "Mazda MX-5 (NC)",
+        "description": "Motor vehicle",
+        "extract": "The Mazda MX-5 (NC) is the third generation of the Mazda MX-5 manufactured from 2005 to 2015. At its introduction in 2005, it won the Car of the Year Japan Award and made Car and Driver's 10Best list from 2006 to 2013.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Mazda_MX-5_(NC)",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/3rd_Mazda_MX-5_--_06-14-2010.jpg/330px-3rd_Mazda_MX-5_--_06-14-2010.jpg"
+      }
+    }
+  },
+  "q:mx5 mazda nc": {
+    "ts": 1763049207.090267,
+    "item": {
+      "id": "wiki-mazda-mx-5-(nc)",
+      "name": "Mazda MX-5 (NC)",
+      "manufacturer": "",
+      "year": "",
+      "slug": "mazda-mx-5-(nc)",
+      "specs": {
+        "production": "2005–2015",
+        "engine": "1.8 L (110 cu in) MZR L8-DE DOHC I4 (Europe) 2.0 L (120 cu in) MZR LF-VE DOHC I4",
+        "power": "126 hp (94 kW) (1.8 L) 170 hp (127 kW) (2.0 L)",
+        "transmission": "5-speed manual 6-speed Aisin AZ6 manual 6-speed SJ6A-EL Activematic automatic",
+        "weight": "1,110 kg (2,450 lb) (soft-top) 1,153 kg (2,542 lb) (PRHT)",
+        "power_kw_min": 94.0,
+        "power_kw_max": 127.0,
+        "power_kw_avg": 110.5,
+        "power_hp_min": 126.0,
+        "power_hp_max": 170.0,
+        "power_hp_avg": 148.0,
+        "power_hp": 170.0,
+        "power_kw": 127.0,
+        "weight_kg_min": 1110.0,
+        "weight_kg_max": 1153.0,
+        "weight_kg_avg": 1131.5,
+        "weight_lb_min": 2447.1,
+        "weight_lb_max": 2541.9,
+        "weight_lb_avg": 2494.5,
+        "weight_kg": 1153.0,
+        "weight_lb": 2541.9
+      },
+      "description": "The Mazda MX-5 (NC) is the third generation of the Mazda MX-5 manufactured from 2005 to 2015. At its introduction in 2005, it won the Car of the Year Japan Award and made Car and Driver's 10Best list from 2006 to 2013.",
+      "_wiki": {
+        "title": "Mazda MX-5 (NC)",
+        "description": "Motor vehicle",
+        "extract": "The Mazda MX-5 (NC) is the third generation of the Mazda MX-5 manufactured from 2005 to 2015. At its introduction in 2005, it won the Car of the Year Japan Award and made Car and Driver's 10Best list from 2006 to 2013.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Mazda_MX-5_(NC)",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/3rd_Mazda_MX-5_--_06-14-2010.jpg/330px-3rd_Mazda_MX-5_--_06-14-2010.jpg"
+      }
+    }
+  },
+  "volkswagen r": {
+    "ts": 1763049465.924557,
+    "item": {
+      "id": "wiki-volkswagen-r",
+      "name": "Volkswagen R",
+      "manufacturer": "",
+      "year": "",
+      "slug": "volkswagen-r",
+      "specs": {},
+      "description": "Volkswagen R is the brand used by the German auto manufacturer Volkswagen to indicate a sport or high performance model. An \"R\" badge is placed on the grille, front fenders and trunk of R-model vehicles to indicate the vehicle's trim level.",
+      "_wiki": {
+        "title": "Volkswagen R",
+        "description": "Brand for high-performance Volkswagen models",
+        "extract": "Volkswagen R is the brand used by the German auto manufacturer Volkswagen to indicate a sport or high performance model. An \"R\" badge is placed on the grille, front fenders and trunk of R-model vehicles to indicate the vehicle's trim level.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Volkswagen_R",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Volkswagen_linea_R_insignia.png/330px-Volkswagen_linea_R_insignia.png"
+      }
+    }
+  },
+  "q:volkswagen golf gti mk7": {
+    "ts": 1763049598.144202,
+    "item": {
+      "id": "wiki-volkswagen-golf-mk7",
+      "name": "Volkswagen Golf Mk7",
+      "manufacturer": "",
+      "year": "",
+      "slug": "volkswagen-golf-mk7",
+      "specs": {
+        "production": "2012–2020 (Europe) 2013–2020 (China) 2015–2020 (Brazil) 2014–2021 (Mexico)",
+        "engine": "Petrol : 1.0 L TSI I3 1.2 L TSI I4 1.4 L TSI I4 1.5 L TSI I4 1.6 L MSI I4 1.8 L TSI I4 2.0 L TSI I4 Petrol plug-in hybrid : 1.4 L TSI I4 (GTE) Diesel : 1.6 L TDI I4 2.0 L TDI I4",
+        "transmission": "5-speed manual MQ350 6-speed manual MQ350 6-speed automatic AQ250 8-speed automatic AQ450 6-speed DSG DQ250 7-speed DSG DQ200 7-speed DSG DQ381",
+        "weight": "1,205–1,500 kg (2,657–3,307 lb) [ 3 ] [ 4 ]",
+        "weight_kg_min": 1205.0,
+        "weight_kg_max": 1500.0,
+        "weight_kg_avg": 1352.5,
+        "weight_lb_min": 2656.6,
+        "weight_lb_max": 3306.9,
+        "weight_lb_avg": 2981.7,
+        "weight_kg": 1500.0,
+        "weight_lb": 3306.9
+      },
+      "description": "The Volkswagen Golf (Mk7) is a C-segment car manufactured by German automobile manufacturer Volkswagen. It is the seventh generation in the Golf series and the successor to the Golf Mk6, and was introduced in Berlin on 4 September 2012, before a public launch at the 2012 Paris Motor Show. Sales in Europe began with the model in November 2012.",
+      "_wiki": {
+        "title": "Volkswagen Golf Mk7",
+        "description": "Seventh generation of Golf compact car",
+        "extract": "The Volkswagen Golf (Mk7) is a C-segment car manufactured by German automobile manufacturer Volkswagen. It is the seventh generation in the Golf series and the successor to the Golf Mk6, and was introduced in Berlin on 4 September 2012, before a public launch at the 2012 Paris Motor Show. Sales in Europe began with the model in November 2012.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk7",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2013_Volkswagen_Golf_SE_BlueMotion_Technology_1.4_Front.jpg/330px-2013_Volkswagen_Golf_SE_BlueMotion_Technology_1.4_Front.jpg"
+      }
+    }
+  },
+  "volkswagen golf mk7": {
+    "ts": 1763049598.1414652,
+    "item": {
+      "id": "wiki-volkswagen-golf-mk7",
+      "name": "Volkswagen Golf Mk7",
+      "manufacturer": "",
+      "year": "",
+      "slug": "volkswagen-golf-mk7",
+      "specs": {
+        "production": "2012–2020 (Europe) 2013–2020 (China) 2015–2020 (Brazil) 2014–2021 (Mexico)",
+        "engine": "Petrol : 1.0 L TSI I3 1.2 L TSI I4 1.4 L TSI I4 1.5 L TSI I4 1.6 L MSI I4 1.8 L TSI I4 2.0 L TSI I4 Petrol plug-in hybrid : 1.4 L TSI I4 (GTE) Diesel : 1.6 L TDI I4 2.0 L TDI I4",
+        "transmission": "5-speed manual MQ350 6-speed manual MQ350 6-speed automatic AQ250 8-speed automatic AQ450 6-speed DSG DQ250 7-speed DSG DQ200 7-speed DSG DQ381",
+        "weight": "1,205–1,500 kg (2,657–3,307 lb) [ 3 ] [ 4 ]",
+        "weight_kg_min": 1205.0,
+        "weight_kg_max": 1500.0,
+        "weight_kg_avg": 1352.5,
+        "weight_lb_min": 2656.6,
+        "weight_lb_max": 3306.9,
+        "weight_lb_avg": 2981.7,
+        "weight_kg": 1500.0,
+        "weight_lb": 3306.9
+      },
+      "description": "The Volkswagen Golf (Mk7) is a C-segment car manufactured by German automobile manufacturer Volkswagen. It is the seventh generation in the Golf series and the successor to the Golf Mk6, and was introduced in Berlin on 4 September 2012, before a public launch at the 2012 Paris Motor Show. Sales in Europe began with the model in November 2012.",
+      "_wiki": {
+        "title": "Volkswagen Golf Mk7",
+        "description": "Seventh generation of Golf compact car",
+        "extract": "The Volkswagen Golf (Mk7) is a C-segment car manufactured by German automobile manufacturer Volkswagen. It is the seventh generation in the Golf series and the successor to the Golf Mk6, and was introduced in Berlin on 4 September 2012, before a public launch at the 2012 Paris Motor Show. Sales in Europe began with the model in November 2012.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk7",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2013_Volkswagen_Golf_SE_BlueMotion_Technology_1.4_Front.jpg/330px-2013_Volkswagen_Golf_SE_BlueMotion_Technology_1.4_Front.jpg"
+      }
+    }
+  },
+  "volkswagen golf mk4": {
+    "ts": 1763049610.850069,
+    "item": {
+      "id": "wiki-volkswagen-golf-mk4",
+      "name": "Volkswagen Golf Mk4",
+      "manufacturer": "",
+      "year": "",
+      "slug": "volkswagen-golf-mk4",
+      "specs": {
+        "production": "October 1997–2006 (Europe) 1999–2014 (Brazil) 2003–2010 (China)",
+        "engine": "Petrol : 1.4 L EA111 16v I4 1.6 L EA827 I4 1.6 L EA111 16v I4 1.6 L EA111 FSI 16v I4 1.8 L EA113 20v I4 1.8 L EA113 20v turbo I4 2.0 L EA827 I4 2.3 L AGZ VR5 2.3 L AQN 20v VR5 2.8 L EA390 VR6 2.8 L EA390 24v VR6 3.2 L EA390 24v VR6 (R32) Petrol CNG : 2.0 L ATM I4 Diesel : 1.9 L EA180 SDI I4 1.9 L EA180 TDI I4 (Verteilerpumpe - VE) 1.9 L EA188 TDI PD I4 (Pumpe Düse)",
+        "transmission": "01M 4-speed automatic 09A 5-speed tiptronic automatic 02J 5-speed manual 02M 6-speed manual 6-speed DSG - R32 only"
+      },
+      "description": "The Volkswagen Golf Mk4 is a compact car, the fourth generation of the Volkswagen Golf and the successor to the Volkswagen Golf Mk3. Launched in October 1997 for the 1998 model year, it was the best-selling car in Europe in 2001.",
+      "_wiki": {
+        "title": "Volkswagen Golf Mk4",
+        "description": "Fourth generation of Golf compact car",
+        "extract": "The Volkswagen Golf Mk4 is a compact car, the fourth generation of the Volkswagen Golf and the successor to the Volkswagen Golf Mk3. Launched in October 1997 for the 1998 model year, it was the best-selling car in Europe in 2001.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk4",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Golf4_1.4.jpg/330px-Golf4_1.4.jpg"
+      }
+    }
+  },
+  "q:golf gti": {
+    "ts": 1763049610.853015,
+    "item": {
+      "id": "wiki-volkswagen-golf-mk4",
+      "name": "Volkswagen Golf Mk4",
+      "manufacturer": "",
+      "year": "",
+      "slug": "volkswagen-golf-mk4",
+      "specs": {
+        "production": "October 1997–2006 (Europe) 1999–2014 (Brazil) 2003–2010 (China)",
+        "engine": "Petrol : 1.4 L EA111 16v I4 1.6 L EA827 I4 1.6 L EA111 16v I4 1.6 L EA111 FSI 16v I4 1.8 L EA113 20v I4 1.8 L EA113 20v turbo I4 2.0 L EA827 I4 2.3 L AGZ VR5 2.3 L AQN 20v VR5 2.8 L EA390 VR6 2.8 L EA390 24v VR6 3.2 L EA390 24v VR6 (R32) Petrol CNG : 2.0 L ATM I4 Diesel : 1.9 L EA180 SDI I4 1.9 L EA180 TDI I4 (Verteilerpumpe - VE) 1.9 L EA188 TDI PD I4 (Pumpe Düse)",
+        "transmission": "01M 4-speed automatic 09A 5-speed tiptronic automatic 02J 5-speed manual 02M 6-speed manual 6-speed DSG - R32 only"
+      },
+      "description": "The Volkswagen Golf Mk4 is a compact car, the fourth generation of the Volkswagen Golf and the successor to the Volkswagen Golf Mk3. Launched in October 1997 for the 1998 model year, it was the best-selling car in Europe in 2001.",
+      "_wiki": {
+        "title": "Volkswagen Golf Mk4",
+        "description": "Fourth generation of Golf compact car",
+        "extract": "The Volkswagen Golf Mk4 is a compact car, the fourth generation of the Volkswagen Golf and the successor to the Volkswagen Golf Mk3. Launched in October 1997 for the 1998 model year, it was the best-selling car in Europe in 2001.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk4",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Golf4_1.4.jpg/330px-Golf4_1.4.jpg"
+      }
+    }
+  },
+  "volkswagen golf mk6": {
+    "ts": 1763050192.6992981,
+    "item": {
+      "id": "wiki-volkswagen-golf-mk6",
+      "name": "Volkswagen Golf Mk6",
+      "manufacturer": "",
+      "year": "",
+      "slug": "volkswagen-golf-mk6",
+      "specs": {
+        "production": "2008–2013 2009–2013 (wagon) 2011–2016 (cabriolet)",
+        "engine": "Petrol : 1.2 L TSI I4 1.4 L I4 1.4 L twincharger TSI I4 1.6 L I4 1.8 L TSI I4 2.0 L TSI I4 2.5 L I5 Diesel : 1.6 L TDI I4 CR 2.0 L TDI I4 CR",
+        "transmission": "5/6-speed manual 6-speed automatic 6/7-speed DSG",
+        "weight": "1,217–1,541 kg (2,683–3,397 lb)",
+        "weight_kg_min": 1217.0,
+        "weight_kg_max": 1541.0,
+        "weight_kg_avg": 1379.0,
+        "weight_lb_min": 2683.0,
+        "weight_lb_max": 3397.3,
+        "weight_lb_avg": 3040.2,
+        "weight_kg": 1541.0,
+        "weight_lb": 3397.3
+      },
+      "description": "The Volkswagen Golf Mk6 is a compact car and the sixth generation of the Volkswagen Golf. The Volkswagen Golf Mk6 is the successor to the Volkswagen Golf Mk5 and It was unveiled at the Paris Motor Show in October 2008 for the 2009 model year.",
+      "_wiki": {
+        "title": "Volkswagen Golf Mk6",
+        "description": "Sixth generation of Golf compact car",
+        "extract": "The Volkswagen Golf Mk6 is a compact car and the sixth generation of the Volkswagen Golf. The Volkswagen Golf Mk6 is the successor to the Volkswagen Golf Mk5 and It was unveiled at the Paris Motor Show in October 2008 for the 2009 model year.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk6",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/VW_Golf_1.6_TDI_Style_%28VI%29_%E2%80%93_Frontansicht%2C_25._Februar_2012%2C_Ratingen.jpg/330px-VW_Golf_1.6_TDI_Style_%28VI%29_%E2%80%93_Frontansicht%2C_25._Februar_2012%2C_Ratingen.jpg"
+      }
+    }
+  },
+  "q:volkswagen golf gti": {
+    "ts": 1763050192.70226,
+    "item": {
+      "id": "wiki-volkswagen-golf-mk6",
+      "name": "Volkswagen Golf Mk6",
+      "manufacturer": "",
+      "year": "",
+      "slug": "volkswagen-golf-mk6",
+      "specs": {
+        "production": "2008–2013 2009–2013 (wagon) 2011–2016 (cabriolet)",
+        "engine": "Petrol : 1.2 L TSI I4 1.4 L I4 1.4 L twincharger TSI I4 1.6 L I4 1.8 L TSI I4 2.0 L TSI I4 2.5 L I5 Diesel : 1.6 L TDI I4 CR 2.0 L TDI I4 CR",
+        "transmission": "5/6-speed manual 6-speed automatic 6/7-speed DSG",
+        "weight": "1,217–1,541 kg (2,683–3,397 lb)",
+        "weight_kg_min": 1217.0,
+        "weight_kg_max": 1541.0,
+        "weight_kg_avg": 1379.0,
+        "weight_lb_min": 2683.0,
+        "weight_lb_max": 3397.3,
+        "weight_lb_avg": 3040.2,
+        "weight_kg": 1541.0,
+        "weight_lb": 3397.3
+      },
+      "description": "The Volkswagen Golf Mk6 is a compact car and the sixth generation of the Volkswagen Golf. The Volkswagen Golf Mk6 is the successor to the Volkswagen Golf Mk5 and It was unveiled at the Paris Motor Show in October 2008 for the 2009 model year.",
+      "_wiki": {
+        "title": "Volkswagen Golf Mk6",
+        "description": "Sixth generation of Golf compact car",
+        "extract": "The Volkswagen Golf Mk6 is a compact car and the sixth generation of the Volkswagen Golf. The Volkswagen Golf Mk6 is the successor to the Volkswagen Golf Mk5 and It was unveiled at the Paris Motor Show in October 2008 for the 2009 model year.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk6",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/VW_Golf_1.6_TDI_Style_%28VI%29_%E2%80%93_Frontansicht%2C_25._Februar_2012%2C_Ratingen.jpg/330px-VW_Golf_1.6_TDI_Style_%28VI%29_%E2%80%93_Frontansicht%2C_25._Februar_2012%2C_Ratingen.jpg"
+      }
+    }
+  },
+  "nissan gt-r": {
+    "ts": 1763050438.605504,
+    "item": {
+      "id": "wiki-nissan-gt-r",
+      "name": "Nissan GT-R",
+      "manufacturer": "",
+      "year": "",
+      "slug": "nissan-gt-r",
+      "specs": {
+        "production": "December 2007 – August 2025 [ 1 ]",
+        "engine": "3.8 L twin-turbocharged VR38DETT V6",
+        "power": "2007–2008: 353 kW (473 hp; 480 PS) 2009: 357 kW (478 hp; 485 PS) 2010–2011: 390 kW (523 hp; 530 PS) 2012–2015: 405 kW (542 hp; 550 PS) 2016–2025: 419 kW (562 hp; 570 PS) Nismo, Track Edition: 441 kW (592 hp; 600 PS) GT-R50: 530 kW (710 hp; 720 PS)",
+        "transmission": "6-speed BorgWarner GR6Z30A dual-clutch transmission",
+        "weight": "2007–2009: 1,740 kg (3,836 lb) SpecV: 1,680 kg (3,704 lb) 2010–2013: 1,735 kg (3,825 lb) Black Edition: 1,730 kg (3,814 lb) 2014–2015: 1,745 kg (3,847 lb) Black Edition: 1,740 kg (3,836 lb) Track Edition: 1,720 kg (3,792 lb) Nismo: 1,730 kg (3,814 lb) 2016–2018: 1,785 kg (3,935 lb) Track Edition: 1,775 kg (3,913 lb) Nismo: 1,775 kg (3,913 lb) 2019–2025: 1,785 kg (3,935 lb) Track Edition: 1,760 kg (3,880 lb) Nismo: 1,750 kg (3,858 lb) T-spec: 1,760 kg (3,880 lb)",
+        "power_kw_min": 353.0,
+        "power_kw_max": 530.0,
+        "power_kw_avg": 413.6,
+        "power_hp_min": 473.0,
+        "power_hp_max": 720.0,
+        "power_hp_avg": 558.2,
+        "power_hp": 720.0,
+        "power_kw": 530.0,
+        "weight_kg_min": 1680.0,
+        "weight_kg_max": 1785.0,
+        "weight_kg_avg": 1742.0,
+        "weight_lb_min": 3703.8,
+        "weight_lb_max": 3935.2,
+        "weight_lb_avg": 3840.4,
+        "weight_kg": 1785.0,
+        "weight_lb": 3935.2
+      },
+      "description": "The Nissan GT-R is a sports car, built by Japanese marque Nissan from 2007 to 2025. It has a 2+2 seating layout and is also considered a grand tourer. The engine is front-mid mounted and drives all four wheels. It succeeds the Nissan Skyline GT-R, a high-performance variant of the Nissan Skyline. Although this model was the sixth-generation to bear the GT-R name, it is no longer part of the Skyline line-up. The car was built on the PM platform, derived from the FM platform used in the Skyline and Nissan Z models. Production was conducted in a shared production line at Nissan's Tochigi plant in Japan.",
+      "_wiki": {
+        "title": "Nissan GT-R",
+        "description": "Sports car manufactured by Japanese automobile manufacturer Nissan",
+        "extract": "The Nissan GT-R is a sports car, built by Japanese marque Nissan from 2007 to 2025. It has a 2+2 seating layout and is also considered a grand tourer. The engine is front-mid mounted and drives all four wheels. It succeeds the Nissan Skyline GT-R, a high-performance variant of the Nissan Skyline. Although this model was the sixth-generation to bear the GT-R name, it is no longer part of the Skyline line-up. The car was built on the PM platform, derived from the FM platform used in the Skyline and Nissan Z models. Production was conducted in a shared production line at Nissan's Tochigi plant in Japan.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/2018_Nissan_GT-R_Premium_in_Super_Silver%2C_Front_Right%2C_10-11-2022.jpg/330px-2018_Nissan_GT-R_Premium_in_Super_Silver%2C_Front_Right%2C_10-11-2022.jpg"
+      }
+    }
+  },
+  "q:nissan gtr r34": {
+    "ts": 1763050438.608408,
+    "item": {
+      "id": "wiki-nissan-gt-r",
+      "name": "Nissan GT-R",
+      "manufacturer": "",
+      "year": "",
+      "slug": "nissan-gt-r",
+      "specs": {
+        "production": "December 2007 – August 2025 [ 1 ]",
+        "engine": "3.8 L twin-turbocharged VR38DETT V6",
+        "power": "2007–2008: 353 kW (473 hp; 480 PS) 2009: 357 kW (478 hp; 485 PS) 2010–2011: 390 kW (523 hp; 530 PS) 2012–2015: 405 kW (542 hp; 550 PS) 2016–2025: 419 kW (562 hp; 570 PS) Nismo, Track Edition: 441 kW (592 hp; 600 PS) GT-R50: 530 kW (710 hp; 720 PS)",
+        "transmission": "6-speed BorgWarner GR6Z30A dual-clutch transmission",
+        "weight": "2007–2009: 1,740 kg (3,836 lb) SpecV: 1,680 kg (3,704 lb) 2010–2013: 1,735 kg (3,825 lb) Black Edition: 1,730 kg (3,814 lb) 2014–2015: 1,745 kg (3,847 lb) Black Edition: 1,740 kg (3,836 lb) Track Edition: 1,720 kg (3,792 lb) Nismo: 1,730 kg (3,814 lb) 2016–2018: 1,785 kg (3,935 lb) Track Edition: 1,775 kg (3,913 lb) Nismo: 1,775 kg (3,913 lb) 2019–2025: 1,785 kg (3,935 lb) Track Edition: 1,760 kg (3,880 lb) Nismo: 1,750 kg (3,858 lb) T-spec: 1,760 kg (3,880 lb)",
+        "power_kw_min": 353.0,
+        "power_kw_max": 530.0,
+        "power_kw_avg": 413.6,
+        "power_hp_min": 473.0,
+        "power_hp_max": 720.0,
+        "power_hp_avg": 558.2,
+        "power_hp": 720.0,
+        "power_kw": 530.0,
+        "weight_kg_min": 1680.0,
+        "weight_kg_max": 1785.0,
+        "weight_kg_avg": 1742.0,
+        "weight_lb_min": 3703.8,
+        "weight_lb_max": 3935.2,
+        "weight_lb_avg": 3840.4,
+        "weight_kg": 1785.0,
+        "weight_lb": 3935.2
+      },
+      "description": "The Nissan GT-R is a sports car, built by Japanese marque Nissan from 2007 to 2025. It has a 2+2 seating layout and is also considered a grand tourer. The engine is front-mid mounted and drives all four wheels. It succeeds the Nissan Skyline GT-R, a high-performance variant of the Nissan Skyline. Although this model was the sixth-generation to bear the GT-R name, it is no longer part of the Skyline line-up. The car was built on the PM platform, derived from the FM platform used in the Skyline and Nissan Z models. Production was conducted in a shared production line at Nissan's Tochigi plant in Japan.",
+      "_wiki": {
+        "title": "Nissan GT-R",
+        "description": "Sports car manufactured by Japanese automobile manufacturer Nissan",
+        "extract": "The Nissan GT-R is a sports car, built by Japanese marque Nissan from 2007 to 2025. It has a 2+2 seating layout and is also considered a grand tourer. The engine is front-mid mounted and drives all four wheels. It succeeds the Nissan Skyline GT-R, a high-performance variant of the Nissan Skyline. Although this model was the sixth-generation to bear the GT-R name, it is no longer part of the Skyline line-up. The car was built on the PM platform, derived from the FM platform used in the Skyline and Nissan Z models. Production was conducted in a shared production line at Nissan's Tochigi plant in Japan.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/2018_Nissan_GT-R_Premium_in_Super_Silver%2C_Front_Right%2C_10-11-2022.jpg/330px-2018_Nissan_GT-R_Premium_in_Super_Silver%2C_Front_Right%2C_10-11-2022.jpg"
+      }
+    }
+  },
+  "lexus ls": {
+    "ts": 1763050500.760575,
+    "item": {
+      "id": "wiki-lexus-ls",
+      "name": "Lexus LS",
+      "manufacturer": "",
+      "year": "",
+      "slug": "lexus-ls",
+      "specs": {
+        "production": "May 1989 – present"
+      },
+      "description": "The Lexus LS  is a series of full-size luxury sedans that have served as the flagship model of Lexus, the luxury division of Toyota, since 1989. For the first four generations, all LS models featured V8 engines and were predominantly rear-wheel-drive. In the fourth generation, Lexus offered all-wheel-drive, hybrid, and long-wheelbase variants. The fifth generation changed to using a V6 engine with no V8 option, and only one length was offered.",
+      "_wiki": {
+        "title": "Lexus LS",
+        "description": "Full-size luxury sedan series produced by Lexus",
+        "extract": "The Lexus LS  is a series of full-size luxury sedans that have served as the flagship model of Lexus, the luxury division of Toyota, since 1989. For the first four generations, all LS models featured V8 engines and were predominantly rear-wheel-drive. In the fourth generation, Lexus offered all-wheel-drive, hybrid, and long-wheelbase variants. The fifth generation changed to using a V6 engine with no V8 option, and only one length was offered.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Lexus_LS",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/2019_Lexus_LS_500_AWD_beige%2C_front_Hagerty_6.1.19.jpg/330px-2019_Lexus_LS_500_AWD_beige%2C_front_Hagerty_6.1.19.jpg"
+      }
+    }
+  },
+  "q:lexus ls400": {
+    "ts": 1763050500.764748,
+    "item": {
+      "id": "wiki-lexus-ls",
+      "name": "Lexus LS",
+      "manufacturer": "",
+      "year": "",
+      "slug": "lexus-ls",
+      "specs": {
+        "production": "May 1989 – present"
+      },
+      "description": "The Lexus LS  is a series of full-size luxury sedans that have served as the flagship model of Lexus, the luxury division of Toyota, since 1989. For the first four generations, all LS models featured V8 engines and were predominantly rear-wheel-drive. In the fourth generation, Lexus offered all-wheel-drive, hybrid, and long-wheelbase variants. The fifth generation changed to using a V6 engine with no V8 option, and only one length was offered.",
+      "_wiki": {
+        "title": "Lexus LS",
+        "description": "Full-size luxury sedan series produced by Lexus",
+        "extract": "The Lexus LS  is a series of full-size luxury sedans that have served as the flagship model of Lexus, the luxury division of Toyota, since 1989. For the first four generations, all LS models featured V8 engines and were predominantly rear-wheel-drive. In the fourth generation, Lexus offered all-wheel-drive, hybrid, and long-wheelbase variants. The fifth generation changed to using a V6 engine with no V8 option, and only one length was offered.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Lexus_LS",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/2019_Lexus_LS_500_AWD_beige%2C_front_Hagerty_6.1.19.jpg/330px-2019_Lexus_LS_500_AWD_beige%2C_front_Hagerty_6.1.19.jpg"
+      }
+    }
+  },
+  "audi a4 dtm": {
+    "ts": 1763050503.978069,
+    "item": {
+      "id": "wiki-audi-a4-dtm",
+      "name": "Audi A4 DTM",
+      "manufacturer": "",
+      "year": "",
+      "slug": "audi-a4-dtm",
+      "specs": {
+        "engine": "NBE -built and assembled Mugen Honda MF308 (rebadged as Audi Sport ) 4.0 L (244 cu in) V8 90° naturally aspirated , front engined , longitudinally mounted",
+        "torque": "368.8 lb⋅ft (500.0 N⋅m )",
+        "transmission": "Hewland / Xtrac 6-speed sequential manual shift gearbox with limited-slip differential",
+        "power": "460 hp (343 kW; 466 PS) 460 brake horsepower (340 kW)",
+        "weight": "1,080 kg (2,381 lb) (2004) later 1,070 kg (2,359 lb) (2007-2008) later 1,050 kg (2,315 lb) (2005-2006, 2009-2011) including driver",
+        "drivetrain": "5 ( 2004 by Mattias Ekström , 2007 by Mattias Ekström , 2008 by Timo Scheider , 2009 by Timo Scheider , 2011 by Martin Tomczyk )",
+        "power_kw_min": 340.0,
+        "power_kw_max": 343.0,
+        "power_kw_avg": 341.5,
+        "power_hp_min": 460.0,
+        "power_hp_max": 466.0,
+        "power_hp_avg": 463.0,
+        "power_hp": 466.0,
+        "power_kw": 343.0,
+        "weight_kg_min": 1050.0,
+        "weight_kg_max": 1080.0,
+        "weight_kg_avg": 1066.7,
+        "weight_lb_min": 2314.9,
+        "weight_lb_max": 2381.0,
+        "weight_lb_avg": 2351.7,
+        "weight_kg": 1050.0,
+        "weight_lb": 2314.9
+      },
+      "description": "The Audi A4 DTM is a 4-door touring car (DTM) constructed by the German car manufacturer Audi. It was first developed for use in the 2004 DTM season, replacing the Audi TT DTM at the end of the 2003 DTM season. Based on the Audi A4, it was continually improved over the course of six facelifts between 2004 and 2011. The Audi A4 DTM was succeeded by the Audi A5 DTM in 2012.",
+      "_wiki": {
+        "title": "Audi A4 DTM",
+        "description": "Touring car model",
+        "extract": "The Audi A4 DTM is a 4-door touring car (DTM) constructed by the German car manufacturer Audi. It was first developed for use in the 2004 DTM season, replacing the Audi TT DTM at the end of the 2003 DTM season. Based on the Audi A4, it was continually improved over the course of six facelifts between 2004 and 2011. The Audi A4 DTM was succeeded by the Audi A5 DTM in 2012.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Audi_A4_DTM",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/DTM_Audi_A4_Eckstroem_2010_amk.JPG/330px-DTM_Audi_A4_Eckstroem_2010_amk.JPG"
+      }
+    }
+  },
+  "q:audi a4": {
+    "ts": 1763050503.9811258,
+    "item": {
+      "id": "wiki-audi-a4-dtm",
+      "name": "Audi A4 DTM",
+      "manufacturer": "",
+      "year": "",
+      "slug": "audi-a4-dtm",
+      "specs": {
+        "engine": "NBE -built and assembled Mugen Honda MF308 (rebadged as Audi Sport ) 4.0 L (244 cu in) V8 90° naturally aspirated , front engined , longitudinally mounted",
+        "torque": "368.8 lb⋅ft (500.0 N⋅m )",
+        "transmission": "Hewland / Xtrac 6-speed sequential manual shift gearbox with limited-slip differential",
+        "power": "460 hp (343 kW; 466 PS) 460 brake horsepower (340 kW)",
+        "weight": "1,080 kg (2,381 lb) (2004) later 1,070 kg (2,359 lb) (2007-2008) later 1,050 kg (2,315 lb) (2005-2006, 2009-2011) including driver",
+        "drivetrain": "5 ( 2004 by Mattias Ekström , 2007 by Mattias Ekström , 2008 by Timo Scheider , 2009 by Timo Scheider , 2011 by Martin Tomczyk )",
+        "power_kw_min": 340.0,
+        "power_kw_max": 343.0,
+        "power_kw_avg": 341.5,
+        "power_hp_min": 460.0,
+        "power_hp_max": 466.0,
+        "power_hp_avg": 463.0,
+        "power_hp": 466.0,
+        "power_kw": 343.0,
+        "weight_kg_min": 1050.0,
+        "weight_kg_max": 1080.0,
+        "weight_kg_avg": 1066.7,
+        "weight_lb_min": 2314.9,
+        "weight_lb_max": 2381.0,
+        "weight_lb_avg": 2351.7,
+        "weight_kg": 1050.0,
+        "weight_lb": 2314.9
+      },
+      "description": "The Audi A4 DTM is a 4-door touring car (DTM) constructed by the German car manufacturer Audi. It was first developed for use in the 2004 DTM season, replacing the Audi TT DTM at the end of the 2003 DTM season. Based on the Audi A4, it was continually improved over the course of six facelifts between 2004 and 2011. The Audi A4 DTM was succeeded by the Audi A5 DTM in 2012.",
+      "_wiki": {
+        "title": "Audi A4 DTM",
+        "description": "Touring car model",
+        "extract": "The Audi A4 DTM is a 4-door touring car (DTM) constructed by the German car manufacturer Audi. It was first developed for use in the 2004 DTM season, replacing the Audi TT DTM at the end of the 2003 DTM season. Based on the Audi A4, it was continually improved over the course of six facelifts between 2004 and 2011. The Audi A4 DTM was succeeded by the Audi A5 DTM in 2012.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Audi_A4_DTM",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/DTM_Audi_A4_Eckstroem_2010_amk.JPG/330px-DTM_Audi_A4_Eckstroem_2010_amk.JPG"
+      }
+    }
+  },
+  "audi r8 (lmp)": {
+    "ts": 1763050580.976148,
+    "item": {
+      "id": "wiki-audi-r8-(lmp)",
+      "name": "Audi R8 (LMP)",
+      "manufacturer": "",
+      "year": "",
+      "slug": "audi-r8-(lmp)",
+      "specs": {
+        "engine": "Audi 3.6 liter 90-degree V8 twin-turbo , mid-engine , longitudinally mounted",
+        "transmission": "Ricardo 6-speed electro-pneumatic actuated sequential manual Multiple-disc limited-slip differential",
+        "drivetrain": "Tom Kristensen Marco Werner Rinaldo Capello Michele Alboreto Allan McNish Emanuele Pirro Frank Biela Laurent Aïello Stéphane Ortelli Stefan Johansson JJ Lehto Johnny Herbert"
+      },
+      "description": "The Audi R8 is a Le Mans Prototype sports-prototype race car introduced in 2000 for sports car racing as a redevelopment of their Audi R8R and Audi R8C used in 1999. In its class, it is one of the most successful racing sports cars having won the 24 Hours of Le Mans race in 2000, 2001, 2002, 2004, and 2005, five of the six years it competed in total. Its streak of Le Mans victories between 2000 and 2005 was broken only in 2003 by the Bentley Speed 8, another race car fielded that year by Volkswagen Group.",
+      "_wiki": {
+        "title": "Audi R8 (LMP)",
+        "description": "Le Mans Prototype race car",
+        "extract": "The Audi R8 is a Le Mans Prototype sports-prototype race car introduced in 2000 for sports car racing as a redevelopment of their Audi R8R and Audi R8C used in 1999. In its class, it is one of the most successful racing sports cars having won the 24 Hours of Le Mans race in 2000, 2001, 2002, 2004, and 2005, five of the six years it competed in total. Its streak of Le Mans victories between 2000 and 2005 was broken only in 2003 by the Bentley Speed 8, another race car fielded that year by Volkswagen Group.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Audi_R8_(LMP)",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/2000_Audi_R8_LMP1_Front.jpg/330px-2000_Audi_R8_LMP1_Front.jpg"
+      }
+    }
+  },
+  "porsche 911 (991)": {
+    "ts": 1763050615.488152,
+    "item": {
+      "id": "wiki-porsche-911-(991)",
+      "name": "Porsche 911 (991)",
+      "manufacturer": "",
+      "year": "",
+      "slug": "porsche-911-(991)",
+      "specs": {
+        "production": "September 2011 – December 2019",
+        "engine": "3.0 L twin-turbocharged Flat-6 3.4 L Flat-6 3.8 L Flat-6 3.8 L twin-turbocharged Flat-6 4.0 L Flat-6",
+        "transmission": "6-speed manual 7-speed manual 7-speed PDK",
+        "weight": "1,435 kg (3,164 lb) (Carrera) 1,495 kg (3,296 lb) (Carrera S) 1,554 kg (3,426 lb) (Carrera S Cabriolet) 1,539 kg (3,393 lb) (Carrera 4S) 1,646 kg (3,629 lb) (Targa 4S) 1,605 kg (3,538 lb) (Turbo) 1,627 kg (3,587 lb) (Turbo S) 1,696 kg (3,739 lb) (Turbo S Cabriolet) 1,485 kg (3,274 lb) (GTS) 1,430 kg (3,150 lb) (GT3) 1,420 kg (3,130 lb) (GT3 RS) 1,470 kg (3,241 lb) (GT2 RS) 1,380 kg (3,042 lb) (935)",
+        "weight_kg_min": 1380.0,
+        "weight_kg_max": 1696.0,
+        "weight_kg_avg": 1521.7,
+        "weight_lb_min": 3042.4,
+        "weight_lb_max": 3739.0,
+        "weight_lb_avg": 3354.8,
+        "weight_kg": 1696.0,
+        "weight_lb": 3739.0
+      },
+      "description": "The Porsche 991 is the seventh generation of the Porsche 911 sports car, which was unveiled at the 2011 Frankfurt Motor Show on 15 September as the replacement for the 997. The 991 was an entirely new platform, only the third since the original 911 launched in 1963. Production of the 991 generation ended on 20 December 2019, with 233,540 units produced.",
+      "_wiki": {
+        "title": "Porsche 911 (991)",
+        "description": "Motor vehicle",
+        "extract": "The Porsche 991 is the seventh generation of the Porsche 911 sports car, which was unveiled at the 2011 Frankfurt Motor Show on 15 September as the replacement for the 997. The 991 was an entirely new platform, only the third since the original 911 launched in 1963. Production of the 991 generation ended on 20 December 2019, with 233,540 units produced.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Porsche_911_(991)",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/2012_Porsche_911_Carrera_S_2.jpg/330px-2012_Porsche_911_Carrera_S_2.jpg"
+      }
+    }
+  },
+  "q:porsche 911": {
+    "ts": 1763050615.4923022,
+    "item": {
+      "id": "wiki-porsche-911-(991)",
+      "name": "Porsche 911 (991)",
+      "manufacturer": "",
+      "year": "",
+      "slug": "porsche-911-(991)",
+      "specs": {
+        "production": "September 2011 – December 2019",
+        "engine": "3.0 L twin-turbocharged Flat-6 3.4 L Flat-6 3.8 L Flat-6 3.8 L twin-turbocharged Flat-6 4.0 L Flat-6",
+        "transmission": "6-speed manual 7-speed manual 7-speed PDK",
+        "weight": "1,435 kg (3,164 lb) (Carrera) 1,495 kg (3,296 lb) (Carrera S) 1,554 kg (3,426 lb) (Carrera S Cabriolet) 1,539 kg (3,393 lb) (Carrera 4S) 1,646 kg (3,629 lb) (Targa 4S) 1,605 kg (3,538 lb) (Turbo) 1,627 kg (3,587 lb) (Turbo S) 1,696 kg (3,739 lb) (Turbo S Cabriolet) 1,485 kg (3,274 lb) (GTS) 1,430 kg (3,150 lb) (GT3) 1,420 kg (3,130 lb) (GT3 RS) 1,470 kg (3,241 lb) (GT2 RS) 1,380 kg (3,042 lb) (935)",
+        "weight_kg_min": 1380.0,
+        "weight_kg_max": 1696.0,
+        "weight_kg_avg": 1521.7,
+        "weight_lb_min": 3042.4,
+        "weight_lb_max": 3739.0,
+        "weight_lb_avg": 3354.8,
+        "weight_kg": 1696.0,
+        "weight_lb": 3739.0
+      },
+      "description": "The Porsche 991 is the seventh generation of the Porsche 911 sports car, which was unveiled at the 2011 Frankfurt Motor Show on 15 September as the replacement for the 997. The 991 was an entirely new platform, only the third since the original 911 launched in 1963. Production of the 991 generation ended on 20 December 2019, with 233,540 units produced.",
+      "_wiki": {
+        "title": "Porsche 911 (991)",
+        "description": "Motor vehicle",
+        "extract": "The Porsche 991 is the seventh generation of the Porsche 911 sports car, which was unveiled at the 2011 Frankfurt Motor Show on 15 September as the replacement for the 997. The 991 was an entirely new platform, only the third since the original 911 launched in 1963. Production of the 991 generation ended on 20 December 2019, with 233,540 units produced.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Porsche_911_(991)",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/2012_Porsche_911_Carrera_S_2.jpg/330px-2012_Porsche_911_Carrera_S_2.jpg"
+      }
+    }
+  },
+  "nissan skyline gt-r": {
+    "ts": 1763050686.7771342,
+    "item": {
+      "id": "wiki-nissan-skyline-gt-r",
+      "name": "Nissan Skyline GT-R",
+      "manufacturer": "",
+      "year": "",
+      "slug": "nissan-skyline-gt-r",
+      "specs": {
+        "production": "1969–1973 1989–2002",
+        "transmission": "5-speed manual (1969–1998) 6-speed manual (1999–2002)"
+      },
+      "description": "The Nissan Skyline GT-R  is a Japanese sports car based on the Nissan Skyline range. The first cars named \"Skyline GT-R\" were produced between 1969 and 1972 under the model code KPGC10, and were successful in Japanese touring car racing events. This model was followed by a brief production run of second-generation cars, under model code KPGC110, in 1973.",
+      "_wiki": {
+        "title": "Nissan Skyline GT-R",
+        "description": "Sports car",
+        "extract": "The Nissan Skyline GT-R  is a Japanese sports car based on the Nissan Skyline range. The first cars named \"Skyline GT-R\" were produced between 1969 and 1972 under the model code KPGC10, and were successful in Japanese touring car racing events. This model was followed by a brief production run of second-generation cars, under model code KPGC110, in 1973.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Nissan_Skyline_GT-R",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Nissan_Skyline_GT-R_R34_V_Spec_II.jpg/330px-Nissan_Skyline_GT-R_R34_V_Spec_II.jpg"
+      }
+    }
+  },
+  "q:nissan skyline": {
+    "ts": 1763050686.7808902,
+    "item": {
+      "id": "wiki-nissan-skyline-gt-r",
+      "name": "Nissan Skyline GT-R",
+      "manufacturer": "",
+      "year": "",
+      "slug": "nissan-skyline-gt-r",
+      "specs": {
+        "production": "1969–1973 1989–2002",
+        "transmission": "5-speed manual (1969–1998) 6-speed manual (1999–2002)"
+      },
+      "description": "The Nissan Skyline GT-R  is a Japanese sports car based on the Nissan Skyline range. The first cars named \"Skyline GT-R\" were produced between 1969 and 1972 under the model code KPGC10, and were successful in Japanese touring car racing events. This model was followed by a brief production run of second-generation cars, under model code KPGC110, in 1973.",
+      "_wiki": {
+        "title": "Nissan Skyline GT-R",
+        "description": "Sports car",
+        "extract": "The Nissan Skyline GT-R  is a Japanese sports car based on the Nissan Skyline range. The first cars named \"Skyline GT-R\" were produced between 1969 and 1972 under the model code KPGC10, and were successful in Japanese touring car racing events. This model was followed by a brief production run of second-generation cars, under model code KPGC110, in 1973.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Nissan_Skyline_GT-R",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Nissan_Skyline_GT-R_R34_V_Spec_II.jpg/330px-Nissan_Skyline_GT-R_R34_V_Spec_II.jpg"
+      }
+    }
+  },
+  "honda civic type r": {
+    "ts": 1763051222.7414541,
+    "item": {
+      "id": "wiki-honda-civic-type-r",
+      "name": "Honda Civic Type R",
+      "manufacturer": "",
+      "year": "",
+      "slug": "honda-civic-type-r",
+      "specs": {
+        "production": "September 1997 – present"
+      },
+      "description": "The Honda Civic Type R  is a series of hot hatchback and sports sedan models based on the Civic, developed and produced by Honda since September 1997. The first Civic Type R was the third model to receive Honda's Type R badge. Type R versions of the Civic typically feature a lightened and stiffened body, specially tuned engine, and upgraded brakes and chassis, and are offered only in five- or six-speed manual transmission. Like other Type R models, red is used in the background of the Honda badge to distinguish it from other models.",
+      "_wiki": {
+        "title": "Honda Civic Type R",
+        "description": "High performance variant of the Honda Civic",
+        "extract": "The Honda Civic Type R  is a series of hot hatchback and sports sedan models based on the Civic, developed and produced by Honda since September 1997. The first Civic Type R was the third model to receive Honda's Type R badge. Type R versions of the Civic typically feature a lightened and stiffened body, specially tuned engine, and upgraded brakes and chassis, and are offered only in five- or six-speed manual transmission. Like other Type R models, red is used in the background of the Honda badge to distinguish it from other models.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Honda_Civic_Type_R",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/2024_Honda_Civic_Type_R%2C_front_right%2C_06-15-2024.jpg/330px-2024_Honda_Civic_Type_R%2C_front_right%2C_06-15-2024.jpg"
+      }
+    }
+  },
+  "q:honda civic type r": {
+    "ts": 1763051222.745489,
+    "item": {
+      "id": "wiki-honda-civic-type-r",
+      "name": "Honda Civic Type R",
+      "manufacturer": "",
+      "year": "",
+      "slug": "honda-civic-type-r",
+      "specs": {
+        "production": "September 1997 – present"
+      },
+      "description": "The Honda Civic Type R  is a series of hot hatchback and sports sedan models based on the Civic, developed and produced by Honda since September 1997. The first Civic Type R was the third model to receive Honda's Type R badge. Type R versions of the Civic typically feature a lightened and stiffened body, specially tuned engine, and upgraded brakes and chassis, and are offered only in five- or six-speed manual transmission. Like other Type R models, red is used in the background of the Honda badge to distinguish it from other models.",
+      "_wiki": {
+        "title": "Honda Civic Type R",
+        "description": "High performance variant of the Honda Civic",
+        "extract": "The Honda Civic Type R  is a series of hot hatchback and sports sedan models based on the Civic, developed and produced by Honda since September 1997. The first Civic Type R was the third model to receive Honda's Type R badge. Type R versions of the Civic typically feature a lightened and stiffened body, specially tuned engine, and upgraded brakes and chassis, and are offered only in five- or six-speed manual transmission. Like other Type R models, red is used in the background of the Honda badge to distinguish it from other models.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Honda_Civic_Type_R",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/2024_Honda_Civic_Type_R%2C_front_right%2C_06-15-2024.jpg/330px-2024_Honda_Civic_Type_R%2C_front_right%2C_06-15-2024.jpg"
+      }
+    }
+  },
+  "nissan rb engine": {
+    "ts": 1763052016.582703,
+    "item": {
+      "id": "wiki-nissan-rb-engine",
+      "name": "Nissan RB engine",
+      "manufacturer": "",
+      "year": "",
+      "slug": "nissan-rb-engine",
+      "specs": {
+        "production": "1985–2004 2019–present (new production; RB26) [ 1 ] [ 2 ]",
+        "displacement": "2.0 L; 121.9 cu in (1,998 cc) 2.4 L; 148.2 cu in (2,428 cc) 2.5 L; 152.4 cu in (2,498 cc) 2.6 L; 156.7 cu in (2,568 cc) 2.8 L; 169.0 cu in (2,770 cc) 3.0 L; 180.8 cu in (2,962 cc)",
+        "power": "94–280 PS (93–276 hp ; 69–206 kW )",
+        "torque": "142–392 N⋅m (14–40 kg⋅m ; 105–289 lb⋅ft )",
+        "power_kw_min": 206.0,
+        "power_kw_max": 206.0,
+        "power_kw_avg": 206.0,
+        "power_hp_min": 276.0,
+        "power_hp_max": 280.0,
+        "power_hp_avg": 278.0,
+        "power_hp": 280.0,
+        "power_kw": 206.0,
+        "displacement_l_min": 2.0,
+        "displacement_l_max": 3.0,
+        "displacement_l": 3.0,
+        "displacement_cc": 3000
+      },
+      "description": "The RB engine is an oversquare 2.0–3.0 L straight-6 four-stroke gasoline engine from Nissan produced from 1985 to 2004. The RB followed the 1983 VG-series V6 engines to offer a full, modern range in both straight or V layouts. It was part of a new engine family name PLASMA.",
+      "_wiki": {
+        "title": "Nissan RB engine",
+        "description": "Reciprocating internal combustion engine",
+        "extract": "The RB engine is an oversquare 2.0–3.0 L straight-6 four-stroke gasoline engine from Nissan produced from 1985 to 2004. The RB followed the 1983 VG-series V6 engines to offer a full, modern range in both straight or V layouts. It was part of a new engine family name PLASMA.",
+        "wiki_url": "https://en.wikipedia.org/wiki/Nissan_RB_engine",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/RB26DETT_R34.jpg/330px-RB26DETT_R34.jpg"
       }
     }
   }

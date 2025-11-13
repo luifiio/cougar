@@ -3,85 +3,218 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vehicle Database - Refined Edition</title>
+        <title>Vehicle Details</title>
         <style>
             /* Reset */
             * { box-sizing: border-box; margin: 0; padding: 0; }
 
-            /* Dark Gran Turismo inspired aesthetic */
+            /* Zara-inspired clean white aesthetic */
             body {
-                font-family: "Garamond", "Georgia", serif;
-                background: radial-gradient(circle at 50% 30%, #222428 0%, #0f1112 50%, #050506 100%);
-                color: #e6e6e6;
+                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+                background: #ffffff;
+                color: #000000;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
                 overflow-x: hidden;
             }
 
-            .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+            .container { max-width: 1600px; margin: 0 auto; padding: 0; }
 
-            /* Header reduced and subtle */
-            .header { display:flex; justify-content:space-between; align-items:center; padding:24px 10px; }
-            .manufacturer-tag { color: #bdbdbd; letter-spacing:4px; text-transform:uppercase; font-size:0.85rem; }
-            .header h1 { font-size:1.6rem; font-weight:400; color:#fff; letter-spacing:6px; font-style:italic; }
-            .year-badge { color:#dcdcdc; border:1px solid rgba(255,255,255,0.06); padding:8px 14px; border-radius:6px; }
-
-            .main-layout { display:grid; grid-template-columns: 65% 35%; gap: 20px; min-height: calc(100vh - 90px); }
-
-            /* Showcase: spotlight and centered car */
-            .car-showcase {
-                position: relative;
-                display:flex; flex-direction:column; align-items:center; justify-content:center;
-                padding: 40px 30px 80px 30px;
-                background: transparent;
+            /* Minimal header */
+            .header { 
+                display:flex; 
+                justify-content:space-between; 
+                align-items:center; 
+                padding:32px 48px;
+                border-bottom:1px solid #e8e8e8;
+            }
+            
+            .manufacturer-tag { 
+                color: #666666; 
+                letter-spacing:2px; 
+                text-transform:uppercase; 
+                font-size:0.7rem;
+                font-weight:400;
+            }
+            
+            .header h1 { 
+                font-size:1.2rem; 
+                font-weight:300; 
+                color:#000; 
+                letter-spacing:1px;
+                margin-top:4px;
+            }
+            
+            .year-badge { 
+                color:#666666; 
+                border:1px solid #e8e8e8; 
+                padding:8px 16px;
+                font-size:0.8rem;
+                letter-spacing:0.5px;
             }
 
-            .spotlight {
-                position:absolute; inset:0; pointer-events:none; background: radial-gradient(450px 180px at 50% 35%, rgba(255,255,255,0.03), transparent 25%);
-                mix-blend-mode: overlay;
+            .main-layout { 
+                display:grid; 
+                grid-template-columns: 68% 32%; 
+                min-height: calc(100vh - 120px);
+            }
+
+            /* Clean product showcase */
+            .car-showcase {
+                position: relative;
+                display:flex; 
+                flex-direction:column; 
+                align-items:center; 
+                justify-content:center;
+                padding: 80px 48px;
+                background: #fafafa;
             }
 
             .car-image-container {
-                width:100%; max-width:1100px; height:520px; display:flex; align-items:center; justify-content:center; position:relative;
-                background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02)); border-radius:8px; overflow:hidden;
-                box-shadow: 0 20px 60px rgba(0,0,0,0.7) inset, 0 40px 80px rgba(0,0,0,0.7);
+                width:100%; 
+                max-width:900px; 
+                height:560px; 
+                display:flex; 
+                align-items:center; 
+                justify-content:center; 
+                position:relative;
+                background: #ffffff;
             }
 
-            .car-image-container img#main-car { max-width:95%; max-height:100%; object-fit:contain; display:block; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.8)); }
+            .car-image-container img#main-car { 
+                max-width:90%; 
+                max-height:90%; 
+                object-fit:contain; 
+                display:block;
+            }
 
-            /* Title overlay (large, translucent) */
+            /* Minimal title */
             .car-title {
-                position:absolute; bottom:22px; left:50%; transform:translateX(-50%);
-                color: rgba(255,255,255,0.95); font-size:1.9rem; letter-spacing:6px; text-align:center; font-weight:600; text-shadow: 0 6px 18px rgba(0,0,0,0.7);
+                position:absolute; 
+                bottom:24px; 
+                left:24px;
+                color: #000000; 
+                font-size:1.1rem; 
+                letter-spacing:1px;
+                font-weight:300;
             }
 
-            .car-subtitle { display:block; font-size:0.95rem; color: rgba(230,230,230,0.85); letter-spacing:2px; margin-top:6px; font-weight:300; }
+            .car-subtitle { 
+                display:block; 
+                font-size:0.8rem; 
+                color: #666666; 
+                letter-spacing:0.5px; 
+                margin-top:4px; 
+                font-weight:400;
+            }
 
-            /* Thumbnail strip (Gran Turismo style) */
-            .thumb-strip { width:100%; max-width:1100px; margin-top:20px; display:flex; justify-content:center; align-items:center; gap:12px; padding:18px 6px; }
+            /* Minimal thumbnail strip */
+            .thumb-strip { 
+                width:100%; 
+                max-width:900px; 
+                margin-top:32px; 
+                display:flex; 
+                justify-content:center; 
+                gap:12px;
+            }
 
-            .thumb { width:94px; height:56px; background: rgba(255,255,255,0.03); border-radius:6px; display:flex; align-items:center; justify-content:center; cursor:pointer; position:relative; transition: transform 160ms ease, box-shadow 160ms ease; overflow:hidden; border:1px solid rgba(255,255,255,0.03); }
-            .thumb img { max-width:100%; max-height:100%; object-fit:cover; display:block; opacity:0.95; }
+            .thumb { 
+                width:80px; 
+                height:80px; 
+                background: #ffffff; 
+                border:1px solid #e8e8e8;
+                display:flex; 
+                align-items:center; 
+                justify-content:center; 
+                cursor:pointer; 
+                transition: border-color 0.2s ease; 
+                overflow:hidden;
+            }
+            
+            .thumb img { 
+                max-width:100%; 
+                max-height:100%; 
+                object-fit:cover; 
+                display:block;
+            }
 
-            .thumb:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.7); }
+            .thumb:hover { 
+                border-color:#666666;
+            }
 
-            .thumb.active { outline: 2px solid rgba(255,255,255,0.9); box-shadow: 0 18px 40px rgba(0,0,0,0.8); transform: translateY(-12px); }
-            .thumb.active::after { content: ""; position:absolute; top:-12px; left:50%; transform:translateX(-50%); border-left:10px solid transparent; border-right:10px solid transparent; border-bottom:12px solid rgba(255,255,255,0.95); }
+            .thumb.active { 
+                border-color:#000000;
+                border-width:2px;
+            }
 
-            /* Keep the specs sidebar readable on dark */
-            .specs-sidebar { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:40px; border-left:1px solid rgba(255,255,255,0.03); color:#ddd; overflow:auto; }
-            .section-title { color:#bdbdbd; border-bottom:1px solid rgba(255,255,255,0.04); padding-bottom:10px; margin-bottom:18px; }
-            .spec-item { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.02); }
-            .spec-name { color:#cfcfcf; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px; }
-            .spec-value { color:#fff; font-weight:300; }
+            /* Clean specs sidebar */
+            .specs-sidebar { 
+                background: #ffffff; 
+                padding:48px 40px;
+                border-left:1px solid #e8e8e8;
+                color:#000; 
+                overflow:auto;
+            }
+            
+            .section-title { 
+                color:#000000; 
+                border-bottom:1px solid #e8e8e8; 
+                padding-bottom:12px; 
+                margin-bottom:24px;
+                font-size:0.8rem;
+                font-weight:400;
+                letter-spacing:2px;
+                text-transform:uppercase;
+            }
+            
+            .spec-item { 
+                display:flex; 
+                justify-content:space-between; 
+                padding:16px 0; 
+                border-bottom:1px solid #f5f5f5;
+            }
+            
+            .spec-name { 
+                color:#666666; 
+                font-size:0.8rem;
+                letter-spacing:0.3px;
+            }
+            
+            .spec-value { 
+                color:#000000; 
+                font-weight:400;
+                font-size:0.85rem;
+            }
 
-            /* Performance bars tuned for contrast */
-            .bar-track { width:100%; height:6px; background: rgba(255,255,255,0.06); border-radius:4px; overflow:hidden; }
-            .bar-progress { height:100%; width:0%; background: linear-gradient(90deg,#ffb86b,#ff6b6b); transition:width 1.2s ease; }
+            /* Minimal performance bars */
+            .bar-track { 
+                width:100%; 
+                height:2px; 
+                background: #e8e8e8;
+                overflow:hidden;
+                margin-top:8px;
+            }
+            
+            .bar-progress { 
+                height:100%; 
+                width:0%; 
+                background: #000000; 
+                transition:width 1s ease;
+            }
 
             /* Responsive */
-            @media (max-width: 1100px) { .main-layout { grid-template-columns: 1fr; } .thumb-strip { gap:8px; } }
-            @media (max-width: 600px) { .car-image-container { height:360px; } .car-title { font-size:1.1rem; } .thumb { width:64px; height:44px; } }
+            @media (max-width: 1100px) { 
+                .main-layout { grid-template-columns: 1fr; }
+                .specs-sidebar { border-left:0; border-top:1px solid #e8e8e8; }
+            }
+            
+            @media (max-width: 600px) { 
+                .header{padding:24px 20px;}
+                .car-showcase{padding:40px 20px;}
+                .car-image-container { height:400px; }
+                .car-title { font-size:0.95rem; }
+                .thumb { width:60px; height:60px; }
+            }
         </style>
     </head>
     <body>

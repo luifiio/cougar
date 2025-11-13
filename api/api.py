@@ -7,11 +7,13 @@ import requests
 import time
 import re
 from urllib.parse import quote
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 app = FastAPI()
 
 # serve the repo root static files so you can open results.html via the API server
-app.mount("/static", StaticFiles(directory=".."), name="static")
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+app.mount("/static", StaticFiles(directory=REPO_ROOT), name="static")
 
 # ensure api/media exists and serve it at /api/media so `thumbnail_local` paths work
 MEDIA_DIR = os.path.join(os.path.dirname(__file__), 'media')
@@ -31,7 +33,7 @@ def wiki_search_title(query):
             'format': 'json',
             'srlimit': 1,
         }
-        r = requests.get('https://en.wikipedia.org/w/api.php', params=params, headers={'User-Agent': USER_AGENT}, timeout=10)
+        r = requests.get('https://en.wikipedia.org/w/api.php', params=params, headers={'User-Agent': USER_AGENT}, timeout=8)
         r.raise_for_status()
         data = r.json()
         hits = data.get('query', {}).get('search', [])
@@ -52,7 +54,7 @@ def wiki_search_candidates(query, limit=5):
             'format': 'json',
             'srlimit': limit,
         }
-        r = requests.get('https://en.wikipedia.org/w/api.php', params=params, headers={'User-Agent': USER_AGENT}, timeout=10)
+        r = requests.get('https://en.wikipedia.org/w/api.php', params=params, headers={'User-Agent': USER_AGENT}, timeout=8)
         r.raise_for_status()
         data = r.json()
         hits = data.get('query', {}).get('search', [])
@@ -64,7 +66,7 @@ def wiki_fetch_summary(title):
     """Fetch the Wikipedia REST summary for a title. Returns dict or None."""
     try:
         url = 'https://en.wikipedia.org/api/rest_v1/page/summary/' + quote(title)
-        r = requests.get(url, headers={'User-Agent': USER_AGENT}, timeout=10)
+        r = requests.get(url, headers={'User-Agent': USER_AGENT}, timeout=8)
         r.raise_for_status()
         return r.json()
     except Exception:
@@ -78,7 +80,7 @@ def wiki_fetch_specs(title):
     """
     try:
         page_url = 'https://en.wikipedia.org/wiki/' + quote(title)
-        r = requests.get(page_url, headers={'User-Agent': USER_AGENT}, timeout=10)
+        r = requests.get(page_url, headers={'User-Agent': USER_AGENT}, timeout=8)
         r.raise_for_status()
         from bs4 import BeautifulSoup
         soup = BeautifulSoup(r.text, 'lxml')
@@ -127,7 +129,7 @@ def wikidata_entity_for_title(title):
             'titles': title,
             'format': 'json'
         }
-        r = requests.get('https://www.wikidata.org/w/api.php', params=params, headers={'User-Agent': USER_AGENT}, timeout=10)
+        r = requests.get('https://www.wikidata.org/w/api.php', params=params, headers={'User-Agent': USER_AGENT}, timeout=8)
         r.raise_for_status()
         data = r.json()
         entities = data.get('entities') or {}
@@ -149,7 +151,7 @@ def wikidata_get_entity(qid):
             'format': 'json',
             'props': 'claims|labels'
         }
-        r = requests.get('https://www.wikidata.org/w/api.php', params=params, headers={'User-Agent': USER_AGENT}, timeout=10)
+        r = requests.get('https://www.wikidata.org/w/api.php', params=params, headers={'User-Agent': USER_AGENT}, timeout=8)
         r.raise_for_status()
         data = r.json()
         return (data.get('entities') or {}).get(qid)
@@ -500,6 +502,8 @@ def _cache_set_query(q: str, item):
 
 
 def _cache_get(title):
+    if not title:
+        return None
     cache = _load_cache()
     key = title.lower()
     entry = cache.get(key)
@@ -546,7 +550,7 @@ def get_cars(q: str = ''):
 
     # no local matches — attempt a Wikipedia fallback to build a best-effort item
     # try multiple candidates and prefer the one that yields richer specs
-    candidates = wiki_search_candidates(q, limit=8)
+    candidates = wiki_search_candidates(q, limit=3)
     title = None
     if candidates:
         # score candidates by token match + richness
@@ -554,7 +558,9 @@ def get_cars(q: str = ''):
         # tokens like 'GT-R' -> 'gtr' and 'R34' -> 'r34' match correctly
         qtokens = [t.lower() for t in re.findall(r"\w+", q.lower())]
         best = (None, -1)
-        for cand in candidates:
+        
+        def score_candidate(cand):
+            """Score a candidate in parallel. Returns (cand, score)."""
             # quick token match score
             cand_tokens = [t.lower() for t in re.findall(r"\w+", cand.lower())]
             token_score = len(set(qtokens) & set(cand_tokens))
@@ -566,7 +572,7 @@ def get_cars(q: str = ''):
                 model_bonus = 6
             # require at least one token overlap with the query; skip unrelated candidates
             if token_score == 0:
-                continue
+                return (cand, -1)
             # prefer cached items quickly (per-candidate)
             cached_cand = _cache_get(cand)
             if cached_cand:
@@ -576,13 +582,12 @@ def get_cars(q: str = ''):
                     cached_richness = 0
                 # prefer cached items but avoid an overwhelming boost: use a modest multiplier
                 cand_score = cached_richness * 20 + token_score * 5 + model_bonus * 5
-                if cand_score > best[1]:
-                    best = (cand, cand_score)
-                continue
+                return (cand, cand_score)
             # fetch specs richness
             specs_try = wiki_fetch_specs(cand) or {}
             richness = len(specs_try.keys())
             # also check wikidata quantities (direct + linked) to prefer model pages with structured numeric claims
+            # Cache the wikidata result to avoid fetching twice
             wd = None
             try:
                 wd = wikidata_fetch_claims_for_title(cand)
@@ -599,9 +604,10 @@ def get_cars(q: str = ''):
                 except Exception:
                     wd_richness = wd_richness
             # heuristics to penalize likely non-vehicle/wrong-type pages
+            # Reuse the wd data we already fetched instead of fetching again
             non_vehicle_penalty = 0
             try:
-                desc = (wikidata_fetch_claims_for_title(cand) or {}).get('description') or ''
+                desc = (wd or {}).get('description') or ''
                 if desc:
                     bad_keywords = ['company', 'manufacturer', 'business', 'organization', 'software', 'film']
                     if any(bk in desc.lower() for bk in bad_keywords):
@@ -617,8 +623,21 @@ def get_cars(q: str = ''):
                     print(f"DEBUG SCORE - cand={cand!r} token={token_score} model_bonus={model_bonus} cached={cached_cand is not None} richness={richness} wd_richness={wd_richness} penalty={non_vehicle_penalty} -> {cand_score}")
             except Exception:
                 pass
-            if cand_score > best[1]:
-                best = (cand, cand_score)
+            return (cand, cand_score)
+        
+        # Use ThreadPoolExecutor to score candidates in parallel
+        with ThreadPoolExecutor(max_workers=3) as executor:
+            futures = {executor.submit(score_candidate, cand): cand for cand in candidates}
+            for future in as_completed(futures):
+                try:
+                    cand, score = future.result()
+                    if score > best[1]:
+                        best = (cand, score)
+                except Exception as e:
+                    if os.environ.get('COUGAR_DEBUG'):
+                        print(f"DEBUG ERROR scoring candidate: {e}")
+                    continue
+        
         title = best[0]
     # fallback: use top hit if nothing found via scoring
     if not title:

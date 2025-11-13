@@ -1,161 +1,178 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!doctype html>
-        <html lang="en">
-          <head>
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width,initial-scale=1" />
-            <title>Search · Vehicle Database</title>
-            <style>
-              /* Minimal reset */
-              *{box-sizing:border-box;margin:0;padding:0}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vehicle Collection</title>
+    <style>
+      /* Minimal reset */
+      *{box-sizing:border-box;margin:0;padding:0}
 
-              html,body{height:100%}
+      html,body{height:100%}
 
-              body{
-                font-family: "Garamond", "Georgia", serif;
-                background: radial-gradient(circle at 50% 30%, #f7f6f4 0%, #efece7 50%, #e9e6e1 100%);
-                color:#2a2a2a;
-                -webkit-font-smoothing:antialiased;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-              }
+      body{
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+        background: #ffffff;
+        color:#000000;
+        -webkit-font-smoothing:antialiased;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        padding:20px;
+      }
 
-              /* Centered search card */
-              .search-card{
-                width:min(880px,94%);
-                background: rgba(255,255,255,0.76);
-                backdrop-filter: blur(8px) saturate(1.05);
-                -webkit-backdrop-filter: blur(8px) saturate(1.05);
-                border-radius:14px;
-                padding:14px 18px;
-                display:flex;
-                gap:12px;
-                align-items:center;
-                box-shadow: 0 18px 40px rgba(42,42,42,0.08), inset 0 1px 0 rgba(255,255,255,0.6);
-                border:1px solid rgba(212,207,197,0.55);
-                position:relative;
-              }
+      /* Header */
+      .site-header{
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        padding:32px 48px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        border-bottom:1px solid #e8e8e8;
+      }
 
-              /* Contour glow */
-              .search-card::before{
-                content:"";
-                position:absolute;inset:-6px;border-radius:18px;
-                background:linear-gradient(90deg, rgba(218,210,200,0.12), rgba(170,160,150,0.06));
-                filter:blur(10px);z-index:-1;
-              }
+      .logo{
+        font-size:0.75rem;
+        font-weight:600;
+        letter-spacing:2.5px;
+        text-transform:uppercase;
+        color:#000;
+      }
 
-              .search-input{flex:1 1 auto;border:0;background:transparent;padding:18px 14px;font-size:1.05rem;color:#2a2a2a;outline:none}
+      /* Centered search area */
+      .search-container{
+        width:100%;
+        max-width:640px;
+        text-align:center;
+      }
 
-              .search-button{background:linear-gradient(180deg,#e6dfd4,#d4cfc5);border:1px solid rgba(42,42,42,0.06);padding:12px 18px;border-radius:10px;cursor:pointer;color:#2a2a2a;font-family:inherit}
+      .search-title{
+        font-size:1.5rem;
+        font-weight:300;
+        letter-spacing:0.5px;
+        margin-bottom:48px;
+        color:#000;
+      }
 
-              .search-button:active{transform:translateY(1px)}
+      .search-card{
+        width:100%;
+        background:#ffffff;
+        border:1px solid #000000;
+        padding:0;
+        display:flex;
+        align-items:stretch;
+        transition:border-color 0.2s ease;
+      }
 
-              .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+      .search-card:focus-within{
+        border-color:#666666;
+      }
 
-              @media(max-width:600px){.search-card{padding:12px;border-radius:12px}.search-input{padding:12px;font-size:1rem}}
-            </style>
-          </head>
-          <body>
-            <form id="site-search" class="search-card" role="search" aria-label="Search vehicles">
-              <label for="q" class="visually-hidden">Search vehicles</label>
-              <input id="q" name="q" class="search-input" type="search" autocomplete="off" placeholder="Search cars, models, years — try 'GT40' or 'Miata'" />
-              <button type="submit" class="search-button">Search</button>
-            </form>
+      .search-input{
+        flex:1 1 auto;
+        border:0;
+        background:transparent;
+        padding:20px 24px;
+        font-size:0.95rem;
+        color:#000000;
+        outline:none;
+        font-family:inherit;
+        letter-spacing:0.3px;
+      }
 
-        <script>
-          // redirect to results page with query param
-          (function(){
-            const form = document.getElementById('site-search');
-            const input = document.getElementById('q');
-            if(!form||!input) return;
-            form.addEventListener('submit', e=>{
-              e.preventDefault();
-              const q = encodeURIComponent(input.value.trim());
-              if(!q){
-                input.style.transition = 'box-shadow 220ms ease';
-                input.style.boxShadow = '0 0 0 4px rgba(255,100,100,0.12)';
-                setTimeout(()=> input.style.boxShadow = '',420);
-                return;
-              }
-              window.location.href = `results.html?q=${q}`;
-            });
-          })();
-        </script>
-          </body>
-        </html>
-                </div>
-            </div>
-        </div>
+      .search-input::placeholder{
+        color:#999999;
+      }
 
-        <script>
-            // Animate bars on load with elegant timing
-            window.addEventListener("load", () => {
-                setTimeout(() => {
-                    const bars = document.querySelectorAll(".bar-progress");
-                    bars.forEach((bar, index) => {
-                        setTimeout(() => {
-                            const width = bar.getAttribute("data-width");
-                            bar.style.width = width + "%";
-                        }, index * 150);
-                    });
-                }, 400);
-            });
+      .search-button{
+        background:#000000;
+        border:0;
+        padding:20px 32px;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:inherit;
+        font-size:0.75rem;
+        font-weight:600;
+        letter-spacing:2px;
+        text-transform:uppercase;
+        transition:background 0.2s ease;
+      }
 
-            // Simple search handler (client-side mock)
-            (function () {
-                const form = document.getElementById('site-search');
-                const input = document.getElementById('q');
+      .search-button:hover{
+        background:#333333;
+      }
 
-                if (!form || !input) return;
+      .search-button:active{
+        background:#000000;
+      }
 
-                form.addEventListener('submit', (e) => {
-                    e.preventDefault();
-                    const q = input.value.trim();
-                    if (!q) {
-                        // tiny feedback: pulse the input
-                        input.style.transition = 'box-shadow 220ms ease';
-                        input.style.boxShadow = '0 0 0 4px rgba(255,100,100,0.12)';
-                        setTimeout(() => input.style.boxShadow = '', 420);
-                        return;
-                    }
+      .visually-hidden{
+        position:absolute!important;
+        height:1px;
+        width:1px;
+        overflow:hidden;
+        clip:rect(1px,1px,1px,1px);
+        white-space:nowrap;
+      }
 
-                    // For now simply log and show a subtle temporary message
-                    console.info('Search:', q);
+      .search-hint{
+        margin-top:24px;
+        font-size:0.8rem;
+        color:#666666;
+        letter-spacing:0.3px;
+      }
 
-                    const note = document.createElement('div');
-                    note.setAttribute('role', 'status');
-                    note.style.position = 'absolute';
-                    note.style.top = '100%';
-                    note.style.left = '50%';
-                    note.style.transform = 'translateX(-50%)';
-                    note.style.marginTop = '12px';
-                    note.style.padding = '8px 12px';
-                    note.style.background = 'rgba(42,42,42,0.06)';
-                    note.style.borderRadius = '8px';
-                    note.style.fontSize = '0.95rem';
-                    note.style.color = '#2a2a2a';
-                    note.textContent = `No server connected — would search for "${q}"`;
+      @media(max-width:600px){
+        .site-header{padding:24px 20px}
+        .logo{font-size:0.7rem}
+        .search-title{font-size:1.2rem;margin-bottom:32px}
+        .search-input{padding:16px 20px;font-size:0.9rem}
+        .search-button{padding:16px 24px;font-size:0.7rem}
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">cougar</div>
+    </header>
 
-                    const card = form;
-                    // remove any existing note
-                    const existing = card.querySelector('.search-note');
-                    if (existing) existing.remove();
-                    note.className = 'search-note';
-                    card.appendChild(note);
+    <div class="search-container">
+      <h1 class="search-title">learn about your vehicle.</h1>
+      <form id="site-search" class="search-card" role="search" aria-label="Search vehicles">
+        <label for="q" class="visually-hidden">Search vehicles</label>
+        <input id="q" name="q" class="search-input" type="search" autocomplete="off" placeholder="...." />
+        <button type="submit" class="search-button">Search</button>
+      </form>
+      <div class="search-hint">Try searching for "ND5RC" or "Nissan R34"</div>
+    </div>
 
-                    setTimeout(() => {
-                        note.style.transition = 'opacity 280ms ease, transform 280ms ease';
-                        note.style.opacity = '0';
-                        note.style.transform = 'translateX(-50%) translateY(-6px)';
-                    }, 900);
-                    setTimeout(() => note.remove(), 1300);
-                });
-            })();
-        </script>
+    <script>
+      // redirect to results page with query param
+      (function(){
+        const form = document.getElementById('site-search');
+        const input = document.getElementById('q');
+        if(!form||!input) return;
+        form.addEventListener('submit', e=>{
+          e.preventDefault();
+          const q = encodeURIComponent(input.value.trim());
+          if(!q){
+            input.style.transition = 'border-color 220ms ease';
+            form.style.borderColor = '#ff0000';
+            setTimeout(()=> form.style.borderColor = '#000000',420);
+            return;
+          }
+          window.location.href = `results.html?q=${q}`;
+        });
+      })();
+    </script>
+  </body>
+</html>
+
+
+                
     </body>
 </html>
